@@ -1,0 +1,345 @@
+<!doctype html><html><head>
+
+<title>Syndicate - создание графики и медиа дизайна</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="sndct.net, sndct, syndicate киев, дизайн киев, заказать дизайн киев, медиа дизайн киев, продающее видео, реклама видео, заказать инфографику">
+<meta name="description" content="Syndicate production это полный цикл создания медиа-контента. Event-графика. Инфографика. 3D графика. Мультипликация. Музкальные клипы. Реклама мобильных приложений. Продающие рекламные ролики. Продвижение блогов.">
+<meta name="robots" content="index, follow">
+<meta name="robots" content="nosnippet">
+<link rel="icon" type="image/ico" href="pic/favicon.ico">
+<link rel="shortcut icon" href="pic/favicon.ico">
+<link rel="stylesheet" href="css.css" type="text/css">
+<!-- Подключаем видеоплеер -->
+<link rel="stylesheet" href="jquery.fancybox.min.css">
+<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+<script src="jquery.fancybox.min.js"></script>
+</head><body>
+
+
+<div class="fix"> <!-- фиксированный блок вверху -->
+
+  <header class="desk"> <!-- десктопное меню -->
+    <a href="#" class="goHome"><img id="dPicLogo" src="pic/logo.png" alt="logo"/></a>
+    <nav>
+    <a href="#we_">О нас</a>
+    <a href="#create_">Что мы создаём</a>
+    <a href="#projects_">Портфолио</a>
+    <a href="#why_">Почему мы</a>
+    <a href="#cont">Контакты</a>
+    </nav>
+    <div class="soc"> <!-- блок соцсетей -->
+      <a href="tel:+380508293277" title="Позвонить"><img src="pic/contact1-white.svg" alt="" id="contact1"
+         onmouseover="document.getElementById('contact1').src='pic/contact1-green.svg'"
+         onmouseout= "document.getElementById('contact1').src='pic/contact1-white.svg'"/></a>
+      <a href="https://t.me/sndct_production" title="Telegram"><img src="pic/contact2-white.svg" alt="" id="contact2"
+         onmouseover="document.getElementById('contact2').src='pic/contact2-green.svg'"
+         onmouseout= "document.getElementById('contact2').src='pic/contact2-white.svg'"/></a>
+      <a href="https://instagram.com/sndct_production?igshid=1vgb17oqqouhz" title="Instagram"><img src="pic/contact3-white.svg" alt="" id="contact3"
+         onmouseover="document.getElementById('contact3').src='pic/contact3-green.svg'"
+         onmouseout= "document.getElementById('contact3').src='pic/contact3-white.svg'"/></a>
+    </div>
+    <div class="lang">
+      <a href="index.htm">EN</a>
+      <a href="ru.htm" class="langRU">RU</a>
+    </div>
+  </header>
+
+  <header class="mobi"> <!-- мобильное меню -->
+    <a href="#" class="goHomeM"><img id="logom" src="pic/logom.png" alt="logo"/></a>
+    <img src="pic/menu.png" alt="menu" id="menu" onclick="menu()"/> <!-- кнопка меню -->
+  </header>
+
+  <script>
+    function menu(){document.getElementById("openedMenu").classList.toggle("opened");}
+    function menuOFF() {
+      var el = document.getElementById("openedMenu");
+      el.classList.remove("opened");
+      el.classList.add("openedMenu"); }
+  </script>
+
+  <div class="openedMenu" id="openedMenu"> <!-- открывающееся меню -->
+      <div class="navMenu"><a href="#we_" onclick="menuOFF()">О нас</a></div>
+      <div class="navMenu"><a href="#create_" onclick="menuOFF()">Что мы создаём</a></div>
+      <div class="navMenu"><a href="#projects_" onclick="menuOFF()">Портфолио</a></div>
+      <div class="navMenu"><a href="#why_" onclick="menuOFF()">Почему мы</a></div>
+      <div class="navMenu"><a href="#cont" onclick="menuOFF()">Контакты</a></div>
+  </div>
+
+</div> <!-- Конец: фиксированный блок вверху -->
+<div class="underFix"></div> <!-- подкладка под фиксированный блок вверху -->
+
+
+<section id="about1"> <!-- Первая секция для декстопа -->
+<h1>Графика и медиа дизайн</h1>
+  <video id="video" autoplay loop muted poster="pic/fon.png">
+    <source src="pic/bg2.mp4"></source>
+  </video>
+</section>
+
+<section id="about2"> <!-- Первая секция для мобил -->
+<h1>Графика и медиа дизайн</h1>
+  <img class='waveTop' src="pic/waveTop.png" alt=""/>
+  <div class="centerContent">
+    <div class="cntBlock">
+      <img id="bigLogo" src="pic/logoBig.png" alt="bigLogo"/>
+      <img id="noLogo" src="pic/mdc.png" alt=""/>
+    </div>
+  </div>
+  <img class='waveBtm' src="pic/waveBtm.png" alt=""/>
+  <img class='crossGreenm' src="pic/crossGreenm.png" alt=""/>
+  <img class='crossGm' src="pic/crossGm.png" alt=""/>
+</section>
+
+
+<a class="anchor" id="we_"></a> <!-- О нас -->
+<section id='we'>
+  <div class="we content">
+    <h2>Кто мы такие?</h2>
+    <span>Мы не просто команда специалистов в сфере моушн-дизайна, мы сообщество креативных людей, имеющих экспертизу в разных областях медиа-дизайна.<br><br>Каждый из нас имеет более 5 лет опыта и десятки работ как с локальными клиентами, так и с заказчиками из-за рубежа.</span>
+  </div>
+  <img src="pic/men.png" alt="" class="men"/>
+</section>
+
+
+<div class="forUG"> <!-- Блок с фоновыми картинками -->
+<img src="pic/crossUnderGreen.png" alt="" class="crossUnderGreen"/>
+<img src="pic/crossGreen.png" alt="" class="crossGreen">
+<img src="pic/fonR.png" alt="" class="fonR">
+</div>
+
+
+<a class="anchor" id="create_"></a> <!-- Что создаём -->
+<section id="create">
+
+  <h2>Что мы создаем</h2>
+  <div class="crt content">
+    <span>Мы предоставляем полный спектр услуг по созданию медиа-контента, от разработки идеи до конечного продукта.</span>
+  </div>
+
+  <div class="kubs"> <!-- первый ряд -->
+    <div class="kub" id="kub1"
+         onmouseover="document.getElementById('kub1').classList.add('kub-active')"
+         onmouseout="document.getElementById('kub1').classList.remove('kub-active')"
+    ><img id="evnt1" src="pic/evnt1.png" alt=""/><div class="sign">Event-графика</div><div
+    class="leftV"></div><div class="leftH"></div></div>
+    <div class="kub" id="kub2"
+         onmouseover="document.getElementById('kub2').classList.add('kub-active')"
+         onmouseout="document.getElementById('kub2').classList.remove('kub-active')"
+    ><img id="evnt2" src="pic/evnt2.png" alt=""/><div class="sign">Инфографика</div></div>
+    <div class="kub" id="kub3"
+         onmouseover="document.getElementById('kub3').classList.add('kub-active')"
+         onmouseout="document.getElementById('kub3').classList.remove('kub-active')"
+    ><img id="evnt3" src="pic/evnt3.png" alt=""/><div class="sign">3D графика</div></div>
+    <div class="kub" id="kub4"
+         onmouseover="document.getElementById('kub4').classList.add('kub-active')"
+         onmouseout="document.getElementById('kub4').classList.remove('kub-active')"
+    ><img id="evnt4" src="pic/evnt4.png" alt=""/><div class="sign">Мультипликация</div></div>
+  </div>
+
+  <div class="kubs kubs2"> <!-- второй ряд -->
+    <div class="kub" id="kub5"
+         onmouseover="document.getElementById('kub5').classList.add('kub-active')"
+         onmouseout="document.getElementById('kub5').classList.remove('kub-active')"
+    ><img id="evnt5" src="pic/evnt5.png" alt=""/><div class="sign">Музыкальные клипы</div></div>
+    <div class="kub" id="kub6"
+         onmouseover="document.getElementById('kub6').classList.add('kub-active')"
+         onmouseout="document.getElementById('kub6').classList.remove('kub-active')"
+    ><img id="evnt6" src="pic/evnt6.png" alt=""/><div class="sign">Реклама мобильных<br>приложений</div></div>
+    <div class="kub" id="kub7"
+         onmouseover="document.getElementById('kub7').classList.add('kub-active')"
+         onmouseout="document.getElementById('kub7').classList.remove('kub-active')"
+    ><img id="evnt7" src="pic/evnt7.png" alt=""/><div class="sign">Продающие<br>рекламные ролики</div></div>
+    <div class="kub" id="kub8"
+         onmouseover="document.getElementById('kub8').classList.add('kub-active')"
+         onmouseout="document.getElementById('kub8').classList.remove('kub-active')"
+    ><img id="evnt8" src="pic/evnt8.png" alt=""/><div class="sign">Блоги</div><div
+    class="rightV"></div><div class="rightH"></div></div>
+  </div>
+
+</section>
+
+
+<a class="anchor" id="projects_"></a> <!-- Наши проекты -->
+<section id="projects">
+
+  <header>
+    <h2>Наши проекты</h2>
+    <a href="https://www.youtube.com/channel/UC4yzP2MpW6_I4SHIauL__nQ/videos" class="btnViewAll"><span>View all</span></a>
+  </header>
+
+  <div class="blks"><div class="blocks">
+
+    <a class="blk" data-fancybox="gallery" href="https://youtu.be/R8QnJUYD2Vw"
+         onmouseover="document.getElementById('mask1').classList.add('mask');
+                      document.getElementById('play1').classList.add('play');
+                      document.getElementById('play1').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask1').classList.remove('mask')
+                     document.getElementById('play1').classList.add('noplay');
+                     document.getElementById('play1').classList.remove('play');">
+      <div class="projH1">We AR</div>
+      <div class="projH2">3D графика</div>
+      <div class="projTxt">Пояснительная инфографика<br>для мобильного трекера</div>
+      <div class="prjPic pic1"><div id="mask1" class=""></div><img src="pic/play.png" alt="" id="play1" class="noplay"/></div>
+    </a>
+
+    <a class="blk" data-fancybox="gallery" href="https://youtu.be/wVLwUmj3-L0"
+         onmouseover="document.getElementById('mask2').classList.add('mask');
+                      document.getElementById('play2').classList.add('play');
+                      document.getElementById('play2').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask2').classList.remove('mask')
+                     document.getElementById('play2').classList.add('noplay');
+                     document.getElementById('play2').classList.remove('play');">
+      <div class="projH1">In Time</div>
+      <div class="projH2">Инфографика</div>
+      <div class="projTxt">Реклама мобильного<br/>приложения</div>
+      <div class="prjPic pic2"><div id="mask2" class=""></div><img src="pic/play.png" alt="" id="play2" class="noplay"/></div>
+    </a>
+
+    <a class="blk" data-fancybox="gallery" href="https://youtu.be/mace3jYsow8"
+         onmouseover="document.getElementById('mask3').classList.add('mask');
+                      document.getElementById('play3').classList.add('play');
+                      document.getElementById('play3').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask3').classList.remove('mask')
+                     document.getElementById('play3').classList.add('noplay');
+                     document.getElementById('play3').classList.remove('play');">
+      <div class="projH1">FMS</div>
+      <div class="projH2">Блог</div>
+      <div class="projTxt">Съёмка рекламного<br/>видеоблога</div>
+      <div class="prjPic pic3"><div id="mask3" class=""></div><img src="pic/play.png" alt="" id="play3" class="noplay"/></div>
+    </a>
+
+    <a class="blk" data-fancybox="gallery" href="https://youtu.be/-xVzRle_YZM"
+         onmouseover="document.getElementById('mask4').classList.add('mask');
+                      document.getElementById('play4').classList.add('play');
+                      document.getElementById('play4').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask4').classList.remove('mask')
+                     document.getElementById('play4').classList.add('noplay');
+                     document.getElementById('play4').classList.remove('play');">
+      <div class="projH1">Green Life</div>
+      <div class="projH2">2D графика</div>
+      <div class="projTxt">Реклама Интернет-<br>магазина растений</div>
+      <div class="prjPic pic4"><div id="mask4" class=""></div><img src="pic/play.png" alt="" id="play4" class="noplay"/></div>
+    </a>
+
+    <a class="blk" data-fancybox="gallery" href="https://youtu.be/sLLzhHDdseA"
+         onmouseover="document.getElementById('mask5').classList.add('mask');
+                      document.getElementById('play5').classList.add('play');
+                      document.getElementById('play5').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask5').classList.remove('mask')
+                     document.getElementById('play5').classList.add('noplay');
+                     document.getElementById('play5').classList.remove('play');">
+      <div class="projH1">Syncosa</div>
+      <div class="projH2">Инфографика</div>
+      <div class="projTxt">Реклама мобильного сервиса<br>по поиску работников</div>
+      <div class="prjPic pic5"><div id="mask5" class=""></div><img src="pic/play.png" alt="" id="play5" class="noplay"/></div>
+    </a>
+
+    <a class="blk" data-fancybox="gallery" href="https://youtu.be/TxIOnXB1L44"
+         onmouseover="document.getElementById('mask6').classList.add('mask');
+                      document.getElementById('play6').classList.add('play');
+                      document.getElementById('play6').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask6').classList.remove('mask')
+                     document.getElementById('play6').classList.add('noplay');
+                     document.getElementById('play6').classList.remove('play');">
+      <div class="projH1">Def Talk</div>
+      <div class="projH2">2D графика</div>
+      <div class="projTxt">Реклама мессенджера</div>
+      <div class="prjPic pic6"><div id="mask6" class=""></div><img src="pic/play.png" alt="" id="play6" class="noplay"/></div>
+    </a>
+
+  </div></div>
+
+  <div class="narrows">
+    <div class="leftV"></div><div class="leftH"></div> <!-- полоски слева -->
+    <div class="rightV"></div><div class="rightH"></div> <!-- полоски справа -->
+    <div class="prev"></div><div class="next"></div> <!-- стрелки -->
+  </div>
+
+  <!-- Карусель -->
+  <script>
+  let mm=1;
+  // n - ширина экрана
+  let n=window.innerWidth;if(n==undefined){n=document.documentElement.clientWidth;if(n==undefined){n=document.body.clientWidth};};
+  let width = 302; // ширина блочка
+  let count = 3;  // по умолчанию показываем по 3 блочка
+  if(n <= 768) {count = 1}; // для смартфонов по 1 блочку
+  let list = projects.querySelector('.blocks');
+  let listElems = projects.querySelectorAll('.blk');
+  let position = 0; // положение ленты прокрутки
+  projects.querySelector('.prev').onclick = function() {
+  position += width * count;
+  position = Math.min(position, 0)
+  list.style.marginLeft = position + 'px';};
+  projects.querySelector('.next').onclick = function() {
+  position -= width * count;
+  position = Math.max(position, -width * (listElems.length - count));
+  if (position == mm) {position=0; mm=1;}  else {mm=position};  // зацикливаем прокрутку
+  list.style.marginLeft = position + 'px';};
+  </script>
+
+</section>
+
+
+<div class="forFon"> <!-- Блок с фоновыми картинками -->
+<img src="pic/fonL.png" alt="" class="fonL">
+<img src="pic/fonRS.png" alt="" class="fonRS">
+<img src="pic/fonMF.png" alt="" class="fonMF">
+</div>
+
+
+<a class="anchor" id="why_"></a> <!-- Почему мы? -->
+<section id="why">
+  <h2>Почему мы</h2>
+  <div class="whyRow"><img src="pic/pict1.png" width="49" height="45" alt="">
+    <div class="txt">
+      <span>Мы закрываем весь цикл производства и забираем все сложности на себя.</span>
+    </div>
+  </div>
+  <div class="whyRow"><img src="pic/pict2.png" width="49" height="39" alt="">
+    <div class="txt">
+      <span>Экспертиза наших сотрудников в различных областях медиа-дизайна.</span>
+    </div>
+  </div>
+  <div class="whyRow"><img src="pic/pict3.png" width="49" height="45" alt="">
+    <div class="txt">
+      <span>Чёткие сроки выполнения и создание поэтапной "дорожной карты" выполнения проекта.</span>
+    </div>
+  </div>
+  <div class="whyRow"><img src="pic/pict4.png" width="49" height="43" alt="">
+    <div class="txt">
+      <span>Тщательная проработка креативной концепции, которая выгодно выделит ваш продукт среди конкурентов.</span>
+    </div>
+  </div>
+  <div class="whyRow"><img src="pic/pict5.png" width="49" height="43" alt="">
+    <div class="txt">
+      <span>Вы получаете именно тот продукт, который вы хотите, контролируя каждый этап реализации и становясь на время частью нашей команды.</span>
+    </div>
+  </div>
+  <div class="marginer"></div>
+</section>
+
+
+<section id="cont"> <!-- Контакты -->
+<div class="contContent">
+  <h2>Контакты</h2>
+  <div class="cntName">По вопросам сотрудничества:</div>
+  <div class="cntData"><a href="mailto:office@mail.sndct.net">office@mail.sndct.net</a></div>
+  <div class="cntName">Телефон:</div>
+  <div class="cntData"><a href="tel:+380508293277">+380 (50) 829-32-77</a></div>
+  <div class="soc soc2"> <!-- блок соцсетей -->
+    <a href="tel:+380508293277" title="Позвонить"><img src="pic/contact1-white.svg" alt="" id="contact1b"
+       onmouseover="document.getElementById('contact1b').src='pic/contact1-green.svg'"
+       onmouseout= "document.getElementById('contact1b').src='pic/contact1-white.svg'"/></a>
+    <a href="https://t.me/sndct_production" title="Telegram"><img src="pic/contact2-white.svg" alt="" id="contact2b"
+       onmouseover="document.getElementById('contact2b').src='pic/contact2-green.svg'"
+       onmouseout= "document.getElementById('contact2b').src='pic/contact2-white.svg'"/></a>
+    <a href="https://instagram.com/sndct_production?igshid=1vgb17oqqouhz" title="Instagram"><img src="pic/contact3-white.svg" alt="" id="contact3b"
+       onmouseover="document.getElementById('contact3b').src='pic/contact3-green.svg'"
+       onmouseout= "document.getElementById('contact3b').src='pic/contact3-white.svg'"/></a>
+  </div>
+</div>
+</section>
+
+
+</body></html>
