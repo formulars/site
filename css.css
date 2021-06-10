@@ -19,7 +19,12 @@ font-weight: normal;
 
 
 html, body {height:100%;}
-body    {margin:0; font-family: Arial, Helvetica, sans-serif; color:white; background-color:black;}
+body {
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+color:white;
+background-color:black;
+}
 section {overflow:hidden; margin: 0 auto;}
 h1 {display:none;}
 h2 {font-family: Tahoma, Verdana, Helvetica, sans-serif; font-size:51px; color:#20EB00; margin-top:0; margin-bottom:57px;}
@@ -30,7 +35,7 @@ a#create_{top:-143px;}
 a#projects_, a#why_ {top:-262px;}
 
 .fix     {position:fixed; width:100%; z-index:3; background-color: rgba(0, 0, 0, 0.74);}
-header.desk {display:flex; height:81px; margin: 0 auto; max-width:1220px;}
+header.desk {display:flex; height:81px; margin: 0 auto; width:98%; max-width:1220px;}
 .goHome {margin: auto 20px auto 0; line-height:0;}
 #dPicLogo {width:229px; height:54px;}
 nav    {display:flex; width:540px; margin:auto 0 auto auto; font-family:'MontserratMedium', sans-serif; font-size:12px;}
@@ -38,7 +43,7 @@ nav *  {margin: auto auto auto 0; white-space:nowrap;}
 nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10px 0;}
 .soc   {display:flex; width:118px; margin:auto 0;}
 .soc * {margin: auto auto auto 0;}
-.lang   {margin: auto 0;}
+.lang   {margin: auto 0; white-space: pre;}
 .lang * {color:#20EB00;}
 .langRU {margin-left:5px;}
 #contact1   {width:20px; height:22px;}
