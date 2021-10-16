@@ -41,11 +41,14 @@ header.desk {display:flex; height:81px; margin: 0 auto; width:98%; max-width:122
 nav    {display:flex; width:540px; margin:auto 0 auto auto; font-family:'MontserratMedium', sans-serif; font-size:12px;}
 nav *  {margin: auto auto auto 0; white-space:nowrap;}
 nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10px 0;}
-.soc   {display:flex; width:118px; margin:auto 0;}
-.soc * {margin: auto auto auto 0;}
-.lang   {margin: auto 0; white-space: pre;}
-.lang * {color:#20EB00;}
-.langRU {margin-left:5px;}
+.soc   {display:flex; width:125px; margin:auto 0; justify-content: space-between; align-items: center;}
+.lang   {
+display: flex;
+margin: auto 0 auto 1ex;
+padding: 0 5px;
+color:#20EB00;
+}
+.langRU {margin-left:10px;}
 #contact1   {width:20px; height:22px;}
 #contact2   {width:23px; height:18px;}
 #contact3   {width:23px; height:21px;}
@@ -314,6 +317,7 @@ background: url(pic/fonm.png);
 .centerContent {display:flex; flex-direction:column; height:100%;}
 .cntBlock      {margin:auto;}
 .cntBlock img  {display:block;}
+.cntMail {font-size: 60%;}
 #bigLogo  {width:327px; height:78px;}
 #noLogo   {width:304px; height:26px; padding-left:10px; padding-top:7px;}
 .waveBtm  {width:58%; max-width:238px; position:absolute; top:auto; bottom:0px; right:0;}
