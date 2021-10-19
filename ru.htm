@@ -12,8 +12,10 @@
 <link rel="stylesheet" href="css.css" type="text/css">
 <!-- Подключаем видеоплеер -->
 <link rel="stylesheet" href="jquery.fancybox.min.css">
+<link rel="stylesheet" href="owl.carousel.css">
 <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
 <script src="jquery.fancybox.min.js"></script>
+<script src="owl.carousel.js"></script>
 </head><body>
 
 
@@ -38,9 +40,9 @@
       <a href="https://instagram.com/sndct_production?igshid=1vgb17oqqouhz" target="_blank" title="Instagram"><img src="pic/contact3-white.svg" alt="" id="contact3"
          onmouseover="document.getElementById('contact3').src='pic/contact3-green.svg'"
          onmouseout= "document.getElementById('contact3').src='pic/contact3-white.svg'"/></a>
-      <a href="https://www.facebook.com/sndct.production" target="_blank" title="Facebook"><img src="pic/fb1.png" alt="" id="contact4"
-         onmouseover="document.getElementById('contact4').src='pic/fb2.png'"
-         onmouseout= "document.getElementById('contact4').src='pic/fb1.png'"/></a>         
+      <a href="https://www.facebook.com/sndct.production" target="_blank" title="Facebook"><img src="pic/contact4-white.png" alt="" id="contact4"
+         onmouseover="document.getElementById('contact4').src='pic/contact4-green.png'"
+         onmouseout= "document.getElementById('contact4').src='pic/contact4-white.png'"/></a>         
     </div>
     <div class="lang">
       <a href="index.htm">EN</a><a href="ru.htm" class="langRU">RU</a>
@@ -51,14 +53,6 @@
     <a href="#" class="goHomeM"><img id="logom" src="pic/logom.png" alt="logo"/></a>
     <img src="pic/menu.png" alt="menu" id="menu" onclick="menu()"/> <!-- кнопка меню -->
   </header>
-
-  <script>
-    function menu(){document.getElementById("openedMenu").classList.toggle("opened");}
-    function menuOFF() {
-      var el = document.getElementById("openedMenu");
-      el.classList.remove("opened");
-      el.classList.add("openedMenu"); }
-  </script>
 
   <div class="openedMenu" id="openedMenu"> <!-- открывающееся меню -->
       <div class="navMenu"><a href="#we_" onclick="menuOFF()">О нас</a></div>
@@ -172,115 +166,209 @@
     <a href="https://www.youtube.com/channel/UC4yzP2MpW6_I4SHIauL__nQ/videos" target="_blank" class="btnViewAll"><span>Другие</span></a>
   </header>
 
-  <div class="blks"><div class="blocks">
-
-    <a class="blk" data-fancybox="gallery" href="https://youtu.be/R8QnJUYD2Vw"
+  <div class="folder" id="demos"><div class="blocks row"><div class="owl-carousel">
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/R8QnJUYD2Vw"
          onmouseover="document.getElementById('mask1').classList.add('mask');
                       document.getElementById('play1').classList.add('play');
                       document.getElementById('play1').classList.remove('noplay');"
          onmouseout="document.getElementById('mask1').classList.remove('mask')
                      document.getElementById('play1').classList.add('noplay');
                      document.getElementById('play1').classList.remove('play');">
-      <div class="projH1">We AR</div>
+      <div class="projH1"><span>We AR</span></div>
       <div class="projH2">3D графика</div>
       <div class="projTxt">Пояснительная инфографика<br>для мобильного трекера</div>
-      <div class="prjPic pic1"><div id="mask1" class=""></div><img src="pic/play.png" alt="" id="play1" class="noplay"/></div>
+      <div class="prjPic pic1"><div id="mask1"></div><img src="pic/play.png" alt="" id="play1" class="noplay"/></div>
     </a>
 
-    <a class="blk" data-fancybox="gallery" href="https://youtu.be/wVLwUmj3-L0"
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/wVLwUmj3-L0"
          onmouseover="document.getElementById('mask2').classList.add('mask');
                       document.getElementById('play2').classList.add('play');
                       document.getElementById('play2').classList.remove('noplay');"
          onmouseout="document.getElementById('mask2').classList.remove('mask')
                      document.getElementById('play2').classList.add('noplay');
                      document.getElementById('play2').classList.remove('play');">
-      <div class="projH1">In Time</div>
+      <div class="projH1"><span>In Time</span></div>
       <div class="projH2">Инфографика</div>
       <div class="projTxt">Реклама мобильного<br/>приложения</div>
-      <div class="prjPic pic2"><div id="mask2" class=""></div><img src="pic/play.png" alt="" id="play2" class="noplay"/></div>
+      <div class="prjPic pic2"><div id="mask2"></div><img src="pic/play.png" alt="" id="play2" class="noplay"/></div>
     </a>
 
-    <a class="blk" data-fancybox="gallery" href="https://youtu.be/mace3jYsow8"
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/mace3jYsow8"
          onmouseover="document.getElementById('mask3').classList.add('mask');
                       document.getElementById('play3').classList.add('play');
                       document.getElementById('play3').classList.remove('noplay');"
          onmouseout="document.getElementById('mask3').classList.remove('mask')
                      document.getElementById('play3').classList.add('noplay');
                      document.getElementById('play3').classList.remove('play');">
-      <div class="projH1">FMS</div>
+      <div class="projH1"><span>FMS</span></div>
       <div class="projH2">Блог</div>
       <div class="projTxt">Съёмка рекламного<br/>видеоблога</div>
-      <div class="prjPic pic3"><div id="mask3" class=""></div><img src="pic/play.png" alt="" id="play3" class="noplay"/></div>
+      <div class="prjPic pic3"><div id="mask3"></div><img src="pic/play.png" alt="" id="play3" class="noplay"/></div>
     </a>
 
-    <a class="blk" data-fancybox="gallery" href="https://youtu.be/-xVzRle_YZM"
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/-xVzRle_YZM"
          onmouseover="document.getElementById('mask4').classList.add('mask');
                       document.getElementById('play4').classList.add('play');
                       document.getElementById('play4').classList.remove('noplay');"
          onmouseout="document.getElementById('mask4').classList.remove('mask')
                      document.getElementById('play4').classList.add('noplay');
                      document.getElementById('play4').classList.remove('play');">
-      <div class="projH1">Green Life</div>
+      <div class="projH1"><span>Green Life</span></div>
       <div class="projH2">2D графика</div>
       <div class="projTxt">Реклама Интернет-<br>магазина растений</div>
-      <div class="prjPic pic4"><div id="mask4" class=""></div><img src="pic/play.png" alt="" id="play4" class="noplay"/></div>
+      <div class="prjPic pic4"><div id="mask4"></div><img src="pic/play.png" alt="" id="play4" class="noplay"/></div>
     </a>
 
-    <a class="blk" data-fancybox="gallery" href="https://youtu.be/sLLzhHDdseA"
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/sLLzhHDdseA"
          onmouseover="document.getElementById('mask5').classList.add('mask');
                       document.getElementById('play5').classList.add('play');
                       document.getElementById('play5').classList.remove('noplay');"
          onmouseout="document.getElementById('mask5').classList.remove('mask')
                      document.getElementById('play5').classList.add('noplay');
                      document.getElementById('play5').classList.remove('play');">
-      <div class="projH1">Syncosa</div>
+      <div class="projH1"><span>Syncosa</span></div>
       <div class="projH2">Инфографика</div>
       <div class="projTxt">Реклама мобильного сервиса<br>по поиску работников</div>
-      <div class="prjPic pic5"><div id="mask5" class=""></div><img src="pic/play.png" alt="" id="play5" class="noplay"/></div>
+      <div class="prjPic pic5"><div id="mask5"></div><img src="pic/play.png" alt="" id="play5" class="noplay"/></div>
     </a>
 
-    <a class="blk" data-fancybox="gallery" href="https://youtu.be/TxIOnXB1L44"
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/TxIOnXB1L44"
          onmouseover="document.getElementById('mask6').classList.add('mask');
                       document.getElementById('play6').classList.add('play');
                       document.getElementById('play6').classList.remove('noplay');"
          onmouseout="document.getElementById('mask6').classList.remove('mask')
                      document.getElementById('play6').classList.add('noplay');
                      document.getElementById('play6').classList.remove('play');">
-      <div class="projH1">Def Talk</div>
+      <div class="projH1"><span>Def Talk</span></div>
       <div class="projH2">2D графика</div>
       <div class="projTxt">Реклама мессенджера</div>
-      <div class="prjPic pic6"><div id="mask6" class=""></div><img src="pic/play.png" alt="" id="play6" class="noplay"/></div>
+      <div class="prjPic pic6"><div id="mask6"></div><img src="pic/play.png" alt="" id="play6" class="noplay"/></div>
     </a>
 
-  </div></div>
+
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/m9Tf36TAjZc"
+         onmouseover="document.getElementById('mask7').classList.add('mask');
+                      document.getElementById('play7').classList.add('play');
+                      document.getElementById('play7').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask7').classList.remove('mask')
+                     document.getElementById('play7').classList.add('noplay');
+                     document.getElementById('play7').classList.remove('play');">
+      <div class="projH1"><span>Шоурил</span></div>
+      <div class="projH2">2D/3D Анимация</div>
+      <div class="projTxt">Кейсы 2020-2021</div>
+      <div class="prjPic pic7"><div id="mask7"></div><img src="pic/play.png" alt="" id="play7" class="noplay"/></div>
+    </a>
+
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/Qh-J2t9Nycsc"
+         onmouseover="document.getElementById('mask8').classList.add('mask');
+                      document.getElementById('play8').classList.add('play');
+                      document.getElementById('play8').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask8').classList.remove('mask')
+                     document.getElementById('play8').classList.add('noplay');
+                     document.getElementById('play8').classList.remove('play');">
+      <div class="projH1"><span>Kite</span></div>
+      <div class="projH2">3D Анимация</div>
+      <div class="projTxt">Интро видео<br/>и полное ивент VJ-сопровождение</div>
+      <div class="prjPic pic8"><div id="mask8"></div><img src="pic/play.png" alt="" id="play8" class="noplay"/></div>
+    </a>
+
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/I-6O_HUwds4"
+         onmouseover="document.getElementById('mask9').classList.add('mask');
+                      document.getElementById('play9').classList.add('play');
+                      document.getElementById('play9').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask9').classList.remove('mask')
+                     document.getElementById('play9').classList.add('noplay');
+                     document.getElementById('play9').classList.remove('play');">
+      <div class="projH1"><span>Impactum</span></div>
+      <div class="projH2">Моушн-дизайн</div>
+      <div class="projTxt">Видео манифест<br/>(для Klitschko Foundation)</div>
+      <div class="prjPic pic9"><div id="mask9"></div><img src="pic/play.png" alt="" id="play9" class="noplay"/></div>
+    </a>
+
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/O_3C41BKdUs"
+         onmouseover="document.getElementById('mask10').classList.add('mask');
+                      document.getElementById('play10').classList.add('play');
+                      document.getElementById('play10').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask10').classList.remove('mask')
+                     document.getElementById('play10').classList.add('noplay');
+                     document.getElementById('play10').classList.remove('play');">
+      <div class="projH1"><span class="size2">Genesis Investments</span></div>
+      <div class="projH2">2D/3D Анимация</div>
+      <div class="projTxt">Интро видео<br/>и полное ивент VJ-сопровождение</div>
+      <div class="prjPic pic10"><div id="mask10"></div><img src="pic/play.png" alt="" id="play10" class="noplay"/></div>
+    </a>
+
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/_cC4N9Wb2-g"
+         onmouseover="document.getElementById('mask11').classList.add('mask');
+                      document.getElementById('play11').classList.add('play');
+                      document.getElementById('play11').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask11').classList.remove('mask')
+                     document.getElementById('play11').classList.add('noplay');
+                     document.getElementById('play11').classList.remove('play');">
+      <div class="projH1"><span>Visa</span></div>
+      <div class="projH2">3D Анимация/Изометрия</div>
+      <div class="projTxt">Анимационные видео для интерактивного стенда</div>
+      <div class="prjPic pic11"><div id="mask11"></div><img src="pic/play.png" alt="" id="play11" class="noplay"/></div>
+    </a>
+
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/GE__dMPiw_w"
+         onmouseover="document.getElementById('mask12').classList.add('mask');
+                      document.getElementById('play12').classList.add('play');
+                      document.getElementById('play12').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask12').classList.remove('mask')
+                     document.getElementById('play12').classList.add('noplay');
+                     document.getElementById('play12').classList.remove('play');">
+      <div class="projH1"><span>Tefal</span></div>
+      <div class="projH2">Моушн-дизайн, Постпродакшн</div>
+      <div class="projTxt">Полное ивент VJ-сопровождение</div>
+      <div class="prjPic pic12"><div id="mask12"></div><img src="pic/play.png" alt="" id="play12" class="noplay"/></div>
+    </a>
+
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/0gTzjkyXkbw"
+         onmouseover="document.getElementById('mask13').classList.add('mask');
+                      document.getElementById('play13').classList.add('play');
+                      document.getElementById('play13').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask13').classList.remove('mask')
+                     document.getElementById('play13').classList.add('noplay');
+                     document.getElementById('play13').classList.remove('play');">
+      <div class="projH1"><span class="size3">Future Management Systems</span></div>
+      <div class="projH2">Весь цикл видеопроизводства</div>
+      <div class="projTxt">Объясняющее видео,<br/>промо видео сайта</div>
+      <div class="prjPic pic13"><div id="mask13"></div><img src="pic/play.png" alt="" id="play13" class="noplay"/></div>
+    </a>
+
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/JeQL7l2JaHY"
+         onmouseover="document.getElementById('mask14').classList.add('mask');
+                      document.getElementById('play14').classList.add('play');
+                      document.getElementById('play14').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask14').classList.remove('mask')
+                     document.getElementById('play14').classList.add('noplay');
+                     document.getElementById('play14').classList.remove('play');">
+      <div class="projH1"><span class="size2">Syncosa Service</span></div>
+      <div class="projH2">Flat Анимация</div>
+      <div class="projTxt">Объясняющее видео</div>
+      <div class="prjPic pic14"><div id="mask14"></div><img src="pic/play.png" alt="" id="play14" class="noplay"/></div>
+    </a>
+
+    <a class="blk item" data-fancybox="gallery" href="https://youtu.be/5e77K2-JsmU"
+         onmouseover="document.getElementById('mask15').classList.add('mask');
+                      document.getElementById('play15').classList.add('play');
+                      document.getElementById('play15').classList.remove('noplay');"
+         onmouseout="document.getElementById('mask15').classList.remove('mask')
+                     document.getElementById('play15').classList.add('noplay');
+                     document.getElementById('play15').classList.remove('play');">
+      <div class="projH1"><span>CallActive</span></div>
+      <div class="projH2">Моушн-дизайн</div>
+      <div class="projTxt">Самурай (Lyric video)</div>
+      <div class="prjPic pic15"><div id="mask15"></div><img src="pic/play.png" alt="" id="play15" class="noplay"/></div>
+    </a>
+
+  </div></div></div>
 
   <div class="narrows">
     <div class="leftV"></div><div class="leftH"></div> <!-- полоски слева -->
     <div class="rightV"></div><div class="rightH"></div> <!-- полоски справа -->
-    <div class="prev"></div><div class="next"></div> <!-- стрелки -->
   </div>
-
-  <!-- Карусель -->
-  <script>
-  let mm=1;
-  // n - ширина экрана
-  let n=window.innerWidth;if(n==undefined){n=document.documentElement.clientWidth;if(n==undefined){n=document.body.clientWidth};};
-  let width = 302; // ширина блочка
-  let count = 3;  // по умолчанию показываем по 3 блочка
-  if(n <= 768) {count = 1}; // для смартфонов по 1 блочку
-  let list = projects.querySelector('.blocks');
-  let listElems = projects.querySelectorAll('.blk');
-  let position = 0; // положение ленты прокрутки
-  projects.querySelector('.prev').onclick = function() {
-  position += width * count;
-  position = Math.min(position, 0)
-  list.style.marginLeft = position + 'px';};
-  projects.querySelector('.next').onclick = function() {
-  position -= width * count;
-  position = Math.max(position, -width * (listElems.length - count));
-  if (position == mm) {position=0; mm=1;}  else {mm=position};  // зацикливаем прокрутку
-  list.style.marginLeft = position + 'px';};
-  </script>
 
   <!-- Кнопка "Смотреть все" -->
   <a href="https://www.youtube.com/channel/UC4yzP2MpW6_I4SHIauL__nQ/videos" target="_blank" class="btnAllMob"><span>Другие</span></a>
@@ -344,12 +432,36 @@
     <a href="https://instagram.com/sndct_production?igshid=1vgb17oqqouhz" target="_blank" title="Instagram"><img src="pic/contact3-white.svg" alt="" id="contact3b"
        onmouseover="document.getElementById('contact3b').src='pic/contact3-green.svg'"
        onmouseout= "document.getElementById('contact3b').src='pic/contact3-white.svg'"/></a>
-    <a href="https://www.facebook.com/sndct.production" target="_blank" title="Facebook"><img src="pic/fb1.png" alt="" id="contact4b"
-         onmouseover="document.getElementById('contact4b').src='pic/fb2.png'"
-         onmouseout= "document.getElementById('contact4b').src='pic/fb1.png'"/></a>
+    <a href="https://www.facebook.com/sndct.production" target="_blank" title="Facebook"><img src="pic/contact4-white.png" alt="" id="contact4b"
+         onmouseover="document.getElementById('contact4b').src='pic/contact4-green.png'"
+         onmouseout= "document.getElementById('contact4b').src='pic/contact4-white.png'"/></a>
   </div>
 </div>
 </section>
 
+<script>
 
+/* Открыть-закрыть мобильное меню */
+function menu(){document.getElementById("openedMenu").classList.toggle("opened");}
+function menuOFF() {
+  var el = document.getElementById("openedMenu");
+  el.classList.remove("opened");
+  el.classList.add("openedMenu"); }
+
+$(document).ready(function() {
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    margin: 10,
+    nav: true,
+    loop: true,
+    slideBy: 3,
+    dots: false,
+    responsive: {
+      0: {items: 1},
+      800: {items: 3}
+    }
+  })
+})
+
+</script>
 </body></html>
