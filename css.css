@@ -212,21 +212,15 @@ font-size:12px;
 border-top: solid 1px #20EB00;
 }
 .prjPic   {width:266px; min-height:150px; max-height:150px; margin: auto auto 0 auto; position:relative;}
-.pic1     {background-image:url("pic/project1.png");}
-.pic2     {background-image:url("pic/project2.png");}
-.pic3     {background-image:url("pic/project3.png");}
-.pic4     {background-image:url("pic/project4.png");}
-.pic5     {background-image:url("pic/project5.png");}
-.pic6     {background-image:url("pic/project6.png");}
 .pic7     {background-image:url("pic/project7.png");}
-.pic8     {background-image:url("pic/project8.png");}
-.pic9     {background-image:url("pic/project9.png");}
-.pic10    {background-image:url("pic/project10.png");}
-.pic11    {background-image:url("pic/project11.png");}
-.pic12    {background-image:url("pic/project12.png");}
-.pic13    {background-image:url("pic/project13.png");}
-.pic14    {background-image:url("pic/project14.png");}
-.pic15    {background-image:url("pic/project15.png");}
+.pic8     {background-image:url("pic/project8.jpg");}
+.pic9     {background-image:url("pic/project9.jpg");}
+.pic10    {background-image:url("pic/project10.jpg");}
+.pic11    {background-image:url("pic/project11.jpg");}
+.pic12    {background-image:url("pic/project12.jpg");}
+.pic13    {background-image:url("pic/project13.jpg");}
+.pic14    {background-image:url("pic/project14.jpg");}
+.pic15    {background-image:url("pic/project15.jpg");}
 .mask     {background-image:url("pic/mask.png"); width:100%; height:100%; opacity:0.65;}
 .play     {width:48px !important; height:48px !important; line-height:0 !important; position:absolute !important; top:51px !important; left:109px !important;}
 .noplay   {display:none !important;}
