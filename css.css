@@ -1,18 +1,18 @@
 ﻿@font-face {
-font-family: "MontserratMedium";
-src: url("MontserratMedium.ttf") format("truetype");
+font-family: "KyivBold";
+src: url("KyivTypeSans-Bold2.ttf") format("truetype");
 font-style: normal;
 font-weight: normal;
 }
 @font-face {
-font-family: "Montserrat";
-src: url("Montserrat.ttf") format("truetype");
+font-family: "KyivMedium";
+src: url("KyivTypeSans-Medium2.ttf") format("truetype");
 font-style: normal;
 font-weight: normal;
 }
 @font-face {
-font-family: "MontserratBold";
-src: url("MontserratBold.ttf") format("truetype");
+font-family: "Grotesque";
+src: url("NeuveGrotesque.ttf") format("truetype");
 font-style: normal;
 font-weight: normal;
 }
@@ -20,283 +20,396 @@ font-weight: normal;
 
 html, body {height:100%;}
 body {
-margin:0;
-font-family: Arial, Helvetica, sans-serif;
-color:white;
-background-color:black;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    background-color:#111111;
+    background-image: url(pic/desktop.png), url(pic/desktop2.png);
+    background-repeat: no-repeat, repeat;
+    background-position: center -500px, left bottom;
 }
-section {overflow:hidden; margin: 0 auto;}
-h1 {display:none;}
-h2 {font-family: Tahoma, Verdana, Helvetica, sans-serif; font-size:51px; color:#20EB00; margin-top:0; margin-bottom:57px;}
-header.mobi {display:none !important;}
-a        {color:inherit; text-decoration:inherit;}
-a.anchor {display:block; position:relative; top:2px; visibility:hidden;}
-a#create_{top:-143px;}
-a#projects_, a#why_ {top:-262px;}
 
-.fix     {position:fixed; width:100%; z-index:3; background-color: rgba(0, 0, 0, 0.74);}
-header.desk {display:flex; height:81px; margin: 0 auto; width:98%; max-width:1220px;}
-.goHome {margin: auto 20px auto 0; line-height:0;}
-#dPicLogo {width:229px; height:54px;}
-nav    {display:flex; width:540px; margin:auto 0 auto auto; font-family:'MontserratMedium', sans-serif; font-size:12px;}
-nav *  {margin: auto auto auto 0; white-space:nowrap;}
-nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10px 0;}
-.soc   {display:flex; width:125px; margin:auto 0; justify-content: space-between; align-items: center;}
+#EnterDesk,
+#EnterMobi,
+#Portfolio,
+#About,
+#Advantages,
+#Services,
+#Testimonials,
+#OurTeam,
+#Contacts
+{overflow-x:hidden; margin: 0 auto;}
+
+.green {color: #20EB00;}
+.mobi {display:none !important;}
+a  {color:inherit; text-decoration:inherit;}
+.anchor {display:block; visibility:hidden; position:relative;}
+#toServices {top:-120px;}
+
+.fix {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+.desk {
+    display: flex;
+    justify-content: center;
+    height: 81px;
+    margin: 0 auto;
+}
+.goHome {
+    margin: auto 4rem auto auto !important;
+    line-height: 0;
+}
+#dPicLogo {width:103px; height:24px;}
+.desk nav    {
+    display:flex;
+    justify-content: center;
+    margin: auto 0;
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 13px;
+}
+.desk nav a {
+    margin: auto 4rem auto 0;
+    white-space: nowrap;
+}
+.desk nav a:last-child  {margin:auto 0;}
+.desk nav a:hover {color:#20EB00; border-bottom: solid 2px #20EB00; padding: 12px 0 10px 0;}
+.soc {
+    display: flex;
+    margin: auto 4rem;
+    align-items: center;
+}
+.soc a {margin-right: 15px;}
+.soc a:last-child {margin-right: 0;}
+.underLang {
+    position: relative;
+    width: 45px;
+    height: 100%;
+    margin: auto auto auto 0;
+}
 .lang   {
-display: flex;
-margin: auto 0 auto 1ex;
-padding: 0 5px;
-color:#20EB00;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 2.7em;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 90%;
 }
-.langRU {margin-left:10px;}
-#contact1   {width:20px; height:22px;}
-#contact2   {width:23px; height:18px;}
-#contact3   {width:23px; height:21px;}
-#contact4   {width:27px; height:27px;}
-.underFix   {height:81px;}
+.langEN {color:#20EB00; margin:10px 10px 10px 10px;}
+.langNL { margin: 5px 10px 10px 11px; display:none;}
+.dsp {display:block !important;}
+
+#contact3, #contact4, #contact5   {width:20px; height:20px;}
+
 .openedMenu {display:none;}
-.openedMenu .langEN, .openedMenu .langRU {color:#20EB00; display:inline-block; margin-top:30px;}
-.openedMenu .langRU {margin-left:60px;}
 
-#about1   {background:black; position:relative;}
-#video    {width:100%; height:auto;}
-#about2   {display:none;}
+#EnterDesk   {
+    height: 100vh;
+    overflow: hidden;
+    background:black;
+}
+#video    {
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 100vh;
+}
+#EnterMobi   {display:none;}
 
-
-#we {
-height:1095px;
-background-color:black;
-background-repeat:no-repeat;
-background-image:url(pic/we-fonL.png), url(pic/head.png), url(pic/crossW.png), url(pic/crossWR.png), url(pic/crossG.png);
-background-position: 0 -145px, 745px 90px, 30px 93px, 1220px 685px, 287px 902px;
+#Portfolio {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    padding-top: 10px;  /* для показа свечения */
 }
-.we {
-width:502px;
-margin: 380px 0 0 138px;
+#Portfolio a, #Portfolio img {border-radius: 15px;}
+.portfPic {
+    width: 319px;
+    height: 198px;
+    box-shadow: 0px 0px 10px 0px #20EB00;
 }
-.content {
-font-family: "Montserrat", "Segoe UI", sans-serif;
-font-size:18px;
-line-height:22px;
-}
-
-.men {display:none;}
-
-.forUG {position:relative; max-width:1440px; margin: 0 auto;}
-.crossUnderGreen {width:246px; height:284px; position:absolute; z-index:2; top:-250px;}
-.crossGreen {width:238px; height:268px; position:absolute; z-index:2; top:-250px;}
-.fonR {width:495px; height:716px; position:absolute; z-index:0; right:0; top:-225px;}
-
-
-#create {
-position:relative;
-text-align:center;
-background-repeat:no-repeat;
-background-image:url(pic/crossWRs.png), url(pic/crossGRs.png);
-background-position: 1185px 840px, 1270px 890px;
-}
-#create h2 {margin:0; line-height:0.9;}
-.crt  {width:434px; margin: 46px auto 0 auto;}
-
-.kubs {display:flex; width:1045px; height:215px; margin: 72px auto 0 auto;}
-.kubs2 {margin-top:13px; margin-bottom:295px;}
-.kub  {
-background-color:#212121; width:25%; margin-right:15px;
-font-family: "MontserratMedium", "Montserrat", "Segoe UI", sans-serif; font-size:16px;
-border: solid 1px #212121;
-border-radius:4px;
-display:flex; flex-direction:column;
-}
-.kub-active  {border: solid 1px #20EB00; cursor:pointer;}
-[id^="evnt"] {margin: 50px auto 0 auto;}
-#evnt1 {width:100px; height:107px;}
-#evnt2 {width:104px; height:107px;}
-#evnt3 {width:122px; height:107px;}
-#evnt4 {width:104px; height:102px; margin-bottom:5px;}
-#evnt5 {width:100px; height:107px; margin-top:40px;}
-#evnt6 {width:54px;  height:102px; margin-top:34px;}
-#evnt7 {width:115px; height:102px; margin-top:34px;}
-#evnt8 {width:109px; height:102px; margin: 34px auto 8px auto;}
-.sign  {margin: 10px auto auto auto;}
-
-#kub1, #kub8 {position:relative;}
-#create .leftV  {position:absolute; border-left: solid 1px #20EB00; width:1px; height:100px; top:-79px; left:-16px;}
-#create .leftH  {position:absolute; border-bottom: solid 1px #20EB00; width:325px; height:1px; top:-32px; left:-70px;}
-#create .rightV {position:absolute; border-left: solid 1px #20EB00; width:1px; height:100px; bottom:-77px; right:-24px;}
-#create .rightH {position:absolute; border-bottom: solid 1px #20EB00; width:325px; height:1px; bottom:-25px; right:-78px;}
-
-
-#projects {
-position:relative;
-text-align:center;
-background-repeat:no-repeat;
-z-index:1;
-}
-#projects header {
-display: flex;
-width:906px;
-margin: 0 auto;
-}
-.btnViewAll {
-display:flex;
-width:180px;
-height:55px;
-margin: auto 20px auto auto;
-color:black;
-background-color:#20EB00;
-border-radius:5px;
-font-family: "MontserratBold";
-font-size:110%;
-}
-.btnViewAll span {
-margin: auto;
-}
-.btnAllMob {display: none !important;}
-#projects h2 {margin:0 0 0 20px;}
-.folder {
-position: relative;
-width:906px !important;
-height:350px !important;
-margin: 60px auto 0 auto !important;
-overflow: hidden !important;
-padding-left: 10px;
-padding-right: 10px;
-}
-.blocks {
-width:896px !important;
-}
-.blk  {
-display:flex;
-flex-direction:column;
-width:266px;
-height: 350px;
-margin-left:17px;
-margin-right:17px;
-background-color:#212121;
-font-family: "MontserratMedium", "Montserrat", "Segoe UI", sans-serif; font-size:16px;
-border: solid 1px #212121;
-border-radius:4px;
-}
-.blk:hover {border: solid 1px #212121;}
-.projH1  {
-flex-grow:1;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: auto;
-font-family: "MontserratBold";
-font-size: 42px;
-color: #20EB00;
-}
-.size2 {
-font-size: 38px;
-}
-.size3 {
-font-size: 32px;
-line-height: 1.0;
-}
-.projH2   {
-min-height: 2em;
-max-height: 2em;
-margin: 0 auto;
-font-size:16px;
-}
-.projTxt  {
-width:230px;
-min-height: 4em;
-max-height: 4em;
-margin: 0 auto;
-padding-top: 5px;
-font-family:"Montserrat";
-font-size:12px;
-border-top: solid 1px #20EB00;
-}
-.prjPic   {width:266px; min-height:150px; max-height:150px; margin: auto auto 0 auto; position:relative;}
-.pic7     {background-image:url("pic/project7.png");}
-.pic8     {background-image:url("pic/project8.jpg");}
-.pic9     {background-image:url("pic/project9.jpg");}
-.pic10    {background-image:url("pic/project10.jpg");}
-.pic11    {background-image:url("pic/project11.jpg");}
-.pic12    {background-image:url("pic/project12.jpg");}
-.pic13    {background-image:url("pic/project13.jpg");}
-.pic14    {background-image:url("pic/project14.jpg");}
-.pic15    {background-image:url("pic/project15.jpg");}
-.mask     {background-image:url("pic/mask.png"); width:100%; height:100%; opacity:0.65;}
-.play     {width:48px !important; height:48px !important; line-height:0 !important; position:absolute !important; top:51px !important; left:109px !important;}
-.noplay   {display:none !important;}
-
-.narrows .leftV  {position:absolute; border-left: solid 1px #20EB00; width:1px; height:100px; top:-420px; left:-18px;}
-.narrows .leftH  {position:absolute; border-bottom: solid 1px #20EB00; width:325px; height:1px; top:-371px; left:-75px;}
-.narrows .rightV {position:absolute; border-left: solid 1px #20EB00; width:1px; height:100px; bottom:-69px; right:-17px;}
-.narrows .rightH {position:absolute; border-bottom: solid 1px #20EB00; width:325px; height:1px; bottom:-19px; right:-71px;}
-
-.narrows {position:relative; width:906px; height:0; margin: 0 auto 270px auto;}
-
-.forFon {position:relative; max-width:1440px; margin: 0 auto;}
-.fonL   {width:774px; height:1248px; position:absolute; z-index:0; left:0; top:-895px;}
-.fonRS  {width:429px; height:719px;  position:absolute; z-index:0; right:0;top:-454px;}
-.fonMF  {width:616px; height:953px;  position:absolute; z-index:0; right:0;top:0px;}
-
-#why {
-margin-top:23px;
-padding-bottom:50px;
-background-repeat:no-repeat;
-background-image:url(pic/paw.png), url(pic/crossWB.png);
-background-position: 830px -15px, 1232px 385px;
-}
-#why h2 {line-height:1.2; margin-left:118px; margin-bottom:58px;}
-.whyRow {
-display:flex;
-width:615px;
-margin: 0 0 27px 118px;
-}
-.whyRow .txt {
-font-family:"Montserrat";
-font-size:14px;
-margin-left:26px;
-padding-top:3px;
+.portfBigPic {
+    width: 668px;
+    height: 430px;
+    text-align: center;
+    object-fit: cover;
+    box-shadow: 1px 1px 10px 1px #20EB00;
 }
 
+.grid {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "sm1 sm2 sm3 sm4"
+    "sm5 big big sm6"
+    "sm7 big big sm8"
+    "sm9 sm10 sm11 sm12";
+    text-align: center;
+}
+.smallPlace2   {display: block; grid-area: sm2;}
+.smallPlace1   {display: block; grid-area: sm1;}
+.smallPlace3   {display: block; grid-area: sm3;}
+.smallPlace4   {display: block; grid-area: sm4;}
+.smallPlace5   {display: block; grid-area: sm5;}
+.smallPlace6   {display: block; grid-area: sm6;}
+.smallPlace7   {display: block; grid-area: sm7;}
+.smallPlace8   {display: block; grid-area: sm8;}
+.smallPlace9   {display: block; grid-area: sm9;}
+.smallPlace10 {display: block; grid-area: sm10;}
+.smallPlace11 {display: block; grid-area: sm11;}
+.smallPlace12 {display: block; grid-area: sm12;}
+.bigPlace        {display: block; grid-area: big;}
 
-#cont {
-display:flex;
-height:945px;
-background-repeat:no-repeat;
-background-image:url(pic/fonPod.png), url(pic/cat.png);
-background-position: 0 100px, 542px bottom;
-font-family:"Montserrat";
-font-size:14px;
-}
-.contContent {
-margin: auto auto 285px 140px;
-}
-#cont h2 {margin-bottom:41px;}
-.cntName {margin-bottom:4px;}
-.cntData {
-font-family:"MontserratBold";
-font-size:24px;
-margin-bottom:15px;
-}
-.soc2 {margin: 24px 0 0 0; width:120px;}
-.soc2 * {margin-right:9px;}
-#contact1b {width:24px; height:26px;}
-#contact2b {width:28px; height:22px;}
-#contact3b {width:28px; height:25px;}
-#contact4b {width:32px; height:32px;}
+.grid a:hover {opacity: 0.65;}
 
+.h2 {
+    font-family: "KyivBold", Arial, Helvetica, sans-serif;
+    font-size: 52px;
+}
+.aboutPart1 {
+    border: 1px solid transparent;
+    background-image:
+        url(pic/bg03.png),        /* черно-зеленый крест слева */
+        url(pic/bg04.png),        /* малый светящийся крест правее */
+        url(pic/bg05.png);        /* кресты справа */
+    background-position:
+        137px 50px,               /* черно-зеленый крест слева */
+        337px 270px,             /* малый светящийся крест правее */
+        923px 108px;             /* кресты справа */
+    background-size:
+        198px,                       /* черно-зеленый крест слева */
+        91px,                         /* малый светящийся крест правее */
+        402px;                       /* кресты справа */
+    background-repeat:no-repeat;
+    max-width:1440px;
+    margin: 0 auto;
+    padding-bottom: 230px;
+}
+.aboutPart2 {
+    display: flex;
+    flex-direction: column;
+}
+#About {
+    color: white;
+    text-align: center;
+}
+.about1 {margin-top: 168px;}
+#letsButton {
+    display: flex;
+    font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    width: 237px;
+    height: 58px;
+    margin: 60px auto auto auto;
+    background-image: linear-gradient(to right, #17CA26, #089368);
+    border-radius: 15px;
+}
+.letsButtonHover {box-shadow: 0px 0px 30px 0px #33FF13; cursor: pointer;}
+#letsButton span {margin: auto auto 15px auto; user-select: none;}
+.img_about {width: 28px;}
+.aboutBackground {
+    background-image:
+        url(pic/net.png),           /* сетка в About */
+        url(pic/map.png);         /* карта в About */
+    background-position:
+        center 30px,                 /* сетка в About */
+        center 30px;                 /* карта в About */
+    background-size:
+        1434px,                       /* сетка в About */
+        1084px;                       /* карта в About */
+    background-repeat:no-repeat;
+}
+.aboutContent {
+    display: flex;
+    width: 750px;
+    margin: 108px auto 80px auto;
+}
+.aboutContentColumn1 {
+    width: 445px;
+}
+.aboutContentColumn2 {
+    width: 230px;
+    margin-left: auto;
+}
+.aboutContentHeader {
+    display: flex;
+    align-items: center;
+    font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.aboutContentHeader div {margin-left: 10px;}
+.aboutContentTxt {
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+}
+.aboutContentTxt ul {
+    margin-top: 20px;
+    padding-left: 25px;
+}
+.aboutContentTxt li {line-height: 1.5;}
+.aboutStat {
+    display: flex;
+    justify-content: space-between;
+    width: 870px;
+    margin: 0 auto;
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 13px;
+}
+.aboutStatColumnHeader {
+    font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+#Advantages {
+    background-image:
+    url(pic/bg11.png),     /* крест для головы */
+    url(pic/bg08.png),     /* голова в Advntgs */
+    url(pic/bg09.png);     /* сетка для головы */
+    background-position:
+    1250px 610px,           /* крест для головы */
+    709px 240px,              /* голова в Advntgs */
+    709px 240px;              /* сетка для головы */
+    background-size:
+    163px,                     /* крест для головы */
+    734px,                     /* голова в Advntgs */
+    734px;                     /* сетка для головы */
+    background-repeat:no-repeat;
+}
+.advn1 {
+    text-align: center;
+    margin-top: 170px;
+}
+.advnContent {
+    display: flex;
+    max-width: 900px;
+    margin: 90px auto 205px auto;
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+.advnLeftColumn {
+    width: 415px;
+}
+.advnTopBlock {
+    display: flex;
+    width: 409px;
+    height: 94px;
+    border: 1px solid #20EB00;
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+.advnTopBlock div {
+    width: 47%;
+    margin-left: 45px;
+    margin: auto;
+}
+.advnRow {
+    display: flex;
+    margin-bottom: 30px;
+}
+.advnRowColumn {
+    width: 50%;
+}
+.columnBetween {
+    width: 110px;
+}
+.iPic {
+    width: 66px !important;
+    height: 66px;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 15px auto;
+}
+.i01 {
+    background-image: url(pic/i01.png);
+    width: 75px !important;
+    height: 75px;
+    margin: auto 0 auto 30px !important;
+}
+.i02 {background-image: url(pic/i02.png); background-size: 180%;}
+.i03 {background-image: url(pic/i03.png);}
+.i04 {background-image: url(pic/i04.png);}
+.i05 {background-image: url(pic/i05.png);}
 
-.owl-carousel.owl-drag .owl-item {
--ms-touch-action: pan-y;
-  touch-action: pan-y;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
+.advnText {
+  padding: 0;
 }
-.owl-carousel .owl-nav.disabled,  .owl-carousel .owl-nav .owl-prev,  .owl-carousel .owl-nav .owl-next,  .owl-carousel .owl-dot {
-cursor: pointer;
-user-select: none;
+#Services {
+    background-image:
+    url(pic/bg14.png),     /* сетка для Сервисов */
+    url(pic/bg15.png),     /* зеленый крест для Сервисов */
+    url(pic/bg17.png),     /* зеленый крест после Сервисов */
+    url(pic/bg16.png);     /* серый крест после Сервисов */
+    background-position:
+    0 50px,                     /* сетка для Сервисов */
+    30px 10px,                /* зеленый крест для Сервисов */
+    1220px 670px,          /* зеленый крест после Сервисов */
+    1220px 610px;          /* серый крест после Сервисов */
+    background-size:
+    1434px,                    /* сетка для Сервисов */
+    242px,                      /* зеленый крест для Сервисов */
+    110px,                      /* зеленый крест после Сервисов */
+    212px;                      /* серый крест после Сервисов */
+    background-repeat: no-repeat;
 }
+.serv {
+    text-align: center;
+    margin: 0 auto 32px auto;
+}
+.servAnonse {
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.servContent {
+    max-width: 960px;
+    margin: 0 auto  155px auto;
+    color: #4cda3f;
+}
+.servContentRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+}
+.servContentPos {
+    text-align: center;
+}
+.imgPtype1 {
+    width: 192px;
+}
+.servContentPos2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.imgPtype2 {
+    width: 160px;
+}
+.servContentPos2 img {
+    margin: auto 0;
+}
+.servContentPos2 div {
+    margin: 0;
+}
+#toTestimonials {top: -150px;}
+.testmn {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.owl-carousel.owl-drag .owl-item {-ms-touch-action: pan-y;touch-action: pan-y;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.owl-carousel .owl-nav.disabled,  .owl-carousel .owl-nav .owl-prev,  .owl-carousel .owl-nav .owl-next,  .owl-carousel .owl-dot {cursor: pointer;user-select: none;}
 .owl-carousel .owl-item {
 float: left;
 }
@@ -309,9 +422,10 @@ overflow: hidden;
 position: absolute;
 display: flex;
 justify-content: space-between;
-top: calc(50% - 20px);
+top: 65px;
 left: 0;
 width: 100%;
+height: 0;
 }
 .owl-carousel .owl-nav button.owl-prev,  .owl-carousel .owl-nav button.owl-next { /* обе кнопки */
 background: none;
@@ -320,203 +434,1003 @@ border: none;
 padding: 0 !important;
 font: 1px;
 }
-.owl-carousel .owl-nav button.owl-prev { /* кнопка < */
-width:14px; height:27px; background-image:url('pic/nleft.png');
+.owl-carousel .owl-nav button.owl-prev { /* кнопка Влево */
+width:40px; height:41px; background-image:url('pic/nleft.png');
 }
-.owl-carousel .owl-nav button.owl-next { /* кнопка > */
-width:14px; height:27px; background-image:url('pic/nright.png');
+.owl-carousel .owl-nav button.owl-next { /* кнопка Вправо */
+width:40px; height:41px; background-image:url('pic/nright.png');
+}
+.folder {
+    position: relative;
+    width:1070px !important;
+    height:304px;
+    margin: 60px auto 0 auto;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.blocks {
+    width:100%;
+    height: 100%;
+}
+.block {
+    width: 212px;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: transparent;
+}
+.block img {
+    width: 155px !important;
+    margin: 0 auto;
+}
+.blockTxt {
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    padding: 10px 20px;
+}
+.blockActiv {
+    border: 1px solid #20EB00 !important;
+    background-color: black !important;
 }
 
-
-/* Desktops */
-@media all and (min-width:1200px) {
-section {max-width:1440px !important;}
+#OurTeam {
+    border: 1px solid transparent;
+    margin-top: 250px;
+    background-image:
+        url(pic/bg34.png),    /* большой крест слева от Команды */
+        url(pic/bg37.png);    /* двойной крест справа от Команды */
+    background-position:
+        90px 0px,                /* большой крест слева от Команды */
+        1250px 300px;         /* двойной крест справа от Команды */
+    background-size:
+        117px,                     /* большой крест слева от Команды */
+        152px;                     /* двойной крест справа от Команды */
+    background-repeat: no-repeat;
+}
+.ourteam {
+    text-align: center;
+}
+.folderTeam {
+    position: relative;
+    width:1070px !important;
+    margin: 40px auto 100px auto;
+    overflow: hidden;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.blockTeam {
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding-top: 10px;
+}
+.blockTeam img {
+    width: 170px !important;
+    margin: 0 auto;
+    border: 1px solid #20EB00;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #20EB00;
+}
+.blockTxtTeam {
+    font-family: "Grotesque", Arial, sans-serif;
+    text-align: center;
+    padding-top: 17px;
+}
+.teamName {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #20EB00;
+    margin-bottom: 3px;
+}
+.teamRole {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
 }
 
-
-/* Pads */
-@media all and (min-width:768px) and (max-width:1199px) {
-header.desk, section {max-width:1199px !important;}
-.crossUnderGreen, .crossGreen {display:none;}
-#kub1, #kub8 {position:inherit;}
-.leftV  {display:none;}
-.leftH  {display:none;}
-.rightV {display:none;}
-.rightH {display:none;}
-.kubs   {width:100% !important;}
-#projects {zoom:80%;}
+#Contacts {
+    margin-top: 180px;
+    background-image:
+        url(pic/bg14.png),     /* сетка */
+        url(pic/bg30.png);     /* скульптура */
+    background-position:
+        0 50px,                     /* сетка */
+        -150px  bottom;        /* скульптура */
+    background-size:
+        1434px,                    /* сетка */
+        892px;                       /* скульптура */
+    background-repeat:no-repeat;
+}
+.empty {height: 150px;}
+.contactsContent {
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    margin-right: 100px;
+}
+.inviteHeader {
+    margin-bottom: 20px;
+}
+.inviteTxt {
+    font-family: "Grotesque", Arial, sans-serif;
+    font-size: 20px;
+}
+.AdviceButton {
+    display: flex;
+    font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    width: 233px;
+    height: 58px;
+    margin: 40px 0 130px auto;
+    background-image: linear-gradient(to right, #17CA26, #089368);
+    border-radius: 15px;
+}
+.AdviceButton span {margin: 13px auto; user-select: none;}
+.AdviceButtonHover {box-shadow: 0px 0px 30px 0px #33FF13;}
+.diffLinks {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Grotesque", Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    color: white;
+}
+.TelMail, .bank, .part {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+.TelMail {
+    margin-bottom: 30px;
+}
+.bank {
+    display: none !important;
+    margin-bottom: 30px;
+}
+.part {
+    font-size: 20px;
+}
+.part a {
+    color: cornflowerblue;
+}
+.contactsTel {
+    display: none;
+    margin-right: 70px;
+}
+.contactsEmail {
+}
+.contactsLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 120px;
+    margin-bottom: 20px;
+    font-family: "KyivBold", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: white;
+}
+.contactsLinks > a {
+    display: block;
+    margin-top: 15px;
+}
+.contactsLinks img {
+    width: 25px;
 }
 
+/* Talk Form */
 
-/* Mobiles */
+#talkLayer {
+    display: none;
+    position: fixed;
+    top:0;right:0;bottom:0;left:0;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    z-index: 10;
+}
+#talkLayer::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#talkForm {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 475px;
+    border-radius: 25px;
+    box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+.formCloser {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.formCloser img {
+    width: 20px;
+    height: 20px;
+    margin-right: 30px;
+}
+.formHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "KyivBold", Arial, sans-serif;
+    font-size: 24px;
+}
+.formHeader img {
+    width: 34px;
+    height: 34px;
+    margin-right: 10px;
+}
+#formForm {
+    margin: 15px 50px 0 50px;
+}
+#uname, #uemail, #uphone {
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid silver;
+    font-size: 16px;
+    margin-top: 40px;
+    width: 100%;
+}
+#buttonSend {
+    width: 205px;
+    height: 55px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 50px auto 30px auto;
+    cursor: pointer;
+}
+.formNote {
+    font-size: 13px;
+}
+
+/* End: Talk Form */
+
+
+/* Wide desktops    ====================================================== */
+@media all and (min-width:2160px) {
+
+    #video {width: 100%;}
+
+    .grid {
+        grid-column-gap: 20px;
+        grid-template-areas:
+        "sm1 sm2 big big big sm7 sm8"
+        "sm3 sm4 big big big sm9 sm10"
+        "sm5 sm6 big big big sm11 sm12";
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .portfPic {
+        width: 12.5vw;
+        height: auto;
+    }
+    .portfBigPic {
+        width: 40vw;
+        height: auto;
+    }
+
+    .aboutPart2 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .aboutContent {
+        margin: 108px auto 80px 100px;
+    }
+    .aboutBackground {
+        margin: 0 0 0 auto;
+        background-position:
+            -60px 30px,             /* сетка в About */
+            -60px 30px;             /* карта в About */
+    }
+
+    #Advantages {
+        margin-top: 200px;
+        background-image:
+        url(pic/bg08.png),          /* голова в Advntgs */
+        url(pic/bg09.png);          /* сетка для головы */
+        background-size:
+        734px,                           /* голова в Advntgs */
+        734px;                           /* сетка для головы */
+        background-position:
+        right 10% top 40px,        /* голова в Advntgs */
+        709px 40px;                  /* сетка для головы */
+    }
+    .advnContent {
+        display: block;
+        max-width: inherit;
+        margin: 140px auto 320px auto;
+    }
+    .advnLeftColumn {
+        display: flex;
+        width: auto;
+        margin-left: 10%;
+    }
+    .advnTopBlock {
+        display: block;
+        width: 165px;                                                 /* Ширина первого блочка в Advantages */
+        height: auto;
+        border: none;
+        margin-bottom: auto;
+    }
+    .advnTopBlock div {
+        width: auto;
+        margin-left: inherit;
+        margin: inherit;
+    }
+    .i01 {margin: 0 auto !important;}
+    .advnRow {
+        margin-bottom: 0;
+        margin-left: 50px;                                             /* Расстояние между блочками в Advantages */
+    }
+    .advnRowColumn {width: 165px;}                          /* Ширина блочков в Advantages */
+    .advnRowColumn:first-child {margin-right: 50px;}   /* Расстояние между блочками в Advantages */
+    .columnBetween {display: none;}
+
+    #toServices {top: -300px;}
+    #Services {
+        background-image:
+        url(pic/bg17.png),              /* зеленый крест после Сервисов */
+        url(pic/bg16.png);              /* серый крест после Сервисов */
+        background-size:
+        88px,                                 /* зеленый крест после Сервисов */
+        170px;                               /* серый крест после Сервисов */
+        background-position:
+        right 28% top 465px,          /* зеленый крест после Сервисов */
+        right 25% top 410px;          /* серый крест после Сервисов */
+    }
+    .servContent {
+        max-width: inherit;
+        display: flex;
+        justify-content: center;
+    }
+    .servContentPos, .servContentPos2 {
+        margin-right: 2vw;
+    }
+
+    #Testimonials {
+        margin-top: 50px;
+    }
+    .folder {
+        width:90% !important;
+        height:340px;
+    }
+    .block {
+        width: 190px;
+        height: 330px;
+    }
+
+    #OurTeam {
+        margin-top: 300px;
+        padding-bottom: 100px;
+        background-image:
+        url(pic/bg34.png),        /* большой крест слева от Команды */
+        url(pic/bg33.png),        /* малый крест слева от Команды */
+        url(pic/bg37.png);        /* двойной крест справа от Команды */
+        background-position:
+            28% 0px,                /* большой крест слева от Команды */
+            32% -5px,               /* малый крест слева от Команды */
+            right 20% top 400px;         /* двойной крест справа от Команды */
+        background-size:
+            80px,                      /* большой крест слева от Команды */
+            52px,                      /* малый крест слева от Команды */
+            152px;                    /* двойной крест справа от Команды */
+    }
+    .folderTeam {
+        width:90% !important;
+    }
+    .blockTeam {
+        width: 190px !important;
+    }
+
+    #Contacts {
+    max-width: 1700px;
+    background-image:
+        url(pic/bg14.png),        /* сетка */
+        url(pic/bg30.png);        /* скульптура */
+    background-position:
+        0 50px,                     /* сетка */
+        0px  bottom;             /* скульптура */
+    background-size:
+        1434px,                    /* сетка */
+        892px;                      /* скульптура */
+    }
+    .contactsContent {margin-right: 200px;}
+
+} /* End: Wide desktops    ================================================== */
+
+
+/* Desktops    ========================================================= */
+@media all and (min-width:1440px) and (max-width:2159px) {
+
+    #EnterMobi,
+    #About,
+    #Advantages,
+    #Services,
+    #Testimonials,
+    #OurTeam,
+    #Contacts
+    {max-width:1440px !important;}    /* ФИКСИРОВАННАЯ ШИРИНА ЦЕНТРА */
+
+} /* End: Desktops    ==================================================== */
+
+
+/* Pads ============================================================= */
+@media all and (min-width:768px) and (max-width:1439px) {
+
+    .desk,
+    #EnterDesk,
+    #EnterMobi,
+    #Portfolio,
+    #About,
+    #Advantages,
+    #Services,
+    #OurTeam,
+    #Contacts
+    {max-width:1439px !important;}
+
+    .soc {
+        width: 200px;
+        margin: auto 0 !important;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .soc a:last-child {margin-right: 0 !important;}
+    .underLang {min-width: 45px;}
+    .rightBorder {width: 20px;}
+
+    .goHome {
+        margin: auto 0 auto auto;
+        width: 112px;
+        padding-left: 20px;
+    }
+    #dPicLogo   {margin-right: auto;}
+    .desk nav    {width: 815px;}
+    .desk nav a {margin: inherit;}
+    .navBetween {
+        flex-grow: 1;
+        min-width: 15px;
+    }
+
+    .grid {
+        grid-template-areas:
+        "big big"
+        "big big"
+        "sm1 sm2"
+        "sm3 sm4"
+        "sm5 sm6"
+        "sm7 sm8"
+        "sm9 sm10"
+        "sm11 sm12";
+    }
+    .portfPic, .portfBigPic {height: auto;}
+
+    #toAdvantages {top: 30px}
+    #Advantages {
+        background-image:
+            url(pic/bg08.png),     /* голова в Advntgs */
+            url(pic/bg09.png);     /* сетка для головы */
+        background-size:
+            50%,                     /* голова в Advntgs */
+            50%;                     /* сетка для головы */
+        background-position:
+            right 0 top calc(1vw * -1 + 300px),              /* голова в Advntgs */
+            right 0 top calc(1vw * -1 + 300px);              /* сетка для головы */
+    }
+    .advnContent {
+        max-width: 920px;
+        padding-left: 20px;
+    }
+
+    .folder, .folderTeam {
+        width:700px !important;
+        height:auto;
+    }
+
+    #Contacts {
+        background-size:
+            1434px,                    /* сетку не трогаем */
+            60%;                        /* скульптура */
+        background-position:
+            0 50px,                     /* сетку не трогаем */
+            -12vw  bottom;          /* скульптура */
+    }
+
+        .contactsTel, .bank, .part {
+            padding: 0 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 30px/50px;
+        }
+
+} /* End: Pads    ======================================================= */
+
+
+/* Mobiles    ========================================================== */
 @media all and (max-width:767px) {
-section {
-display: inherit !important;
-position: relative;
-min-height: 100% !important;
-height: auto !important;
-max-width:767px !important;
-}
-h2 {font-size:37px !important; margin-bottom:0 !important;}
-header.desk {display:none !important;}
-header.mobi {display:flex !important; height:78px; max-width:767px;}
-.underFix   {display:none !important;}
-#logom      {width:149px; height:35px;}
-.goHomeM    {margin: 22px auto auto 20px; line-height:0;}
-#menu       {display:block !important; width:49px; height:22px; margin: auto 20px auto auto;}
-.opened {
-display: block;
-width: 100%;
-height: 990px;
-background-color: black;
-background-image: url(pic/fonMenu.png);
-background-position: 0 80px;
-position: absolute;
-top: 78px;
-left: 0;
-padding: 37px 0 0 40px;
-font-family:'MontserratMedium';
-font-size: 19px;
-}
-.navMenu a {display:inline-block; border-bottom: solid 2px black; padding: 12px 0 13px 0;}
-.navMenu a:hover, .navMenu a:active {border-bottom-color:#20EB00; color:#20EB00;}
-a.anchor, a#create_ {top:0 !important;}
-a#projects_ {top:-100px !important;}
-a#why_ {top:-80px !important;}
 
-#about1 {display:none !important;}
-#about2 {
-height: 100% !important;
-min-height: 500px;
-background: url(pic/fonm.png);
-}
-.waveTop  {width:54%; max-width:222px; position:absolute;}
-.centerContent {display:flex; flex-direction:column; height:100%;}
-.cntBlock      {margin:auto;}
-.cntBlock img  {display:block;}
-.cntMail {font-size: 60%;}
-#bigLogo  {width:327px; height:78px;}
-#noLogo   {width:304px; height:26px; padding-left:10px; padding-top:7px;}
-.waveBtm  {width:58%; max-width:238px; position:absolute; top:auto; bottom:0px; right:0;}
-.crossGreenm  {width:65px; height:58px; position:absolute; left:25px; bottom:0;}
-.crossGm  {width:15px; height:13px; position:absolute; left:90px; bottom:40px;}
+    body {
+        background-color:#101511;
+        background-image: url(pic/desktop.png);
+        background-repeat: no-repeat;
+        background-position: center -500px;
+    }
 
+    #EnterMobi,
+    #Portfolio,
+    #About,
+    #Advantages,
+    #Services,
+    #Testimonials,
+    #OurTeam,
+    #Contacts
+     {
+        max-width:767px !important;
+        display: inherit !important;
+        position: relative;
+        min-height: 100% !important;
+        height: auto !important;
+    }
 
-#we {background-image: none !important; height: auto !important;}
-.we {width:340px !important; margin: 105px auto 0 auto !important;}
-.content {font-size:15.75px !important; line-height: normal !important;}
-.we h2 {margin-bottom: 22px !important;}
-.men {display: block !important; width:414px; height:349px; margin: 0 auto;}
+    .desk {display:none !important;}
+    #EnterDesk {display:none !important;}
+    .mobi {
+        display: flex !important;
+        height: 65px;
+        max-width: 767px;
+    }
+    #EnterMobi {
+        height: 100% !important;
+        min-height: 500px;
+        background: url(pic/fonm.png);
+        overflow: hidden;
+    }
+    .underFix   {display:none !important;}
+    #logom     {width:103px; height:24px;}
+    .goHomeM {margin: auto auto auto 20px; line-height: 0;}
+    #menu {
+        display: block !important;
+        width: 58px;
+        height: 58px;
+        margin: auto 10px auto auto;
+    }
+    .opened {
+        display: block;
+        width: 100%;
+        height: 990px;
+        background-color: black;
+        background-image: url(pic/fonMenu.png);
+        background-position: 0 80px;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        font-size: 19px;
+    }
+    .navMenu {
+        height: calc(100vh - 100px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navLine {
+        border-bottom: solid 2px black;
+        margin-top: 40px;
+    }
+    .navLine:hover,  .navLine:active {
+        border-bottom-color: #20EB00;
+        color: #20EB00;
+    }
+    .ln     {margin-top: auto;}
+    .lnEN {color:#20EB00; margin-right: 30px;}
 
-.forUG, .crossUnderGreen, .crossGreen, .fonR, .forFon, .fonL, .fonRS, .fonMF {display: none !important;}
+    .waveTop {
+        width: 100%;
+        max-width: 360px;
+        position: absolute;
+    }
+    .centerContent {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .cntBlock {
+        display: block;
+        margin: auto;
+        width: 327px;
+        height: 110px;
+    }
+    .waveBtm {
+        width: 100%;
+        max-width: 360px;
+        position: absolute;
+        top: auto;
+        bottom: -115px;
+        right: 0;
+    }
 
-#create {
-height:auto !important;
-min-height:100%;
-background-image: url(pic/fonmcr.png), url(pic/fonmproj.png), url(pic/crossmpr.png) !important;
-background-position: 40px -250px, 0 850px, 107px 1045px !important;
-}
-#create h2 {width:330px !important; margin: 90px auto 25px auto !important; text-align:left; font-size:33px !important;}
-.crt       {width:330px !important; margin: 0 auto 50px auto !important; text-align:left;}
+    #toPortfolio {top: 0px;}
+    #Portfolio a, #Portfolio img {border-radius: 9px;}
+    .portfPic {
+        width: 45vw !important;
+        height: auto;
+        margin-top: 10px;
+    }
+    .portfBigPic {
+        width: 95vw !important;
+        height: auto;
+    }
+    .portfPic, .portfBigPic {box-shadow: 0px 0px 6px 0px #20EB00;}
+    .grid {
+        grid-row-gap: 3px;
+        grid-column-gap: 3px;
+        grid-template-areas:
+        "big big"
+        "big big"
+        "sm1 sm2"
+        "sm3 sm4"
+        "sm5 sm6"
+        "sm7 sm8"
+        "sm9 sm10"
+        "sm11 sm12";
+    }
 
-.kubs {flex-wrap:wrap; width:355px !important; height: auto !important;}
-.kubs2 {margin-top:0 !important; margin-bottom:230px;}
-.kub  {
-width:168px !important;
-height:149px !important;
-margin-right:7px !important;
-margin-top:7px;
-font-size:11.5px !important;
-}
-[id^="evnt"] {margin: 35px auto 0 auto !important;}
-#evnt1 {width:70px !important; height:auto !important;}
-#evnt2 {width:73px !important; height:auto !important;}
-#evnt3 {width:85px !important; height:auto !important;}
-#evnt4 {width:73px !important; height:auto !important; margin-bottom:5px !important;}
-#evnt5 {width:70px !important; height:auto !important; margin-top:auto !important;}
-#evnt6 {width:38px !important; height:auto !important; margin-top:auto !important;}
-#evnt7 {width:81px !important; height:auto !important; margin-top:auto !important;}
-#evnt8 {width:76px !important; height:auto !important; margin:auto auto 5px auto !important;}
-.sign  {margin: 5px auto auto auto !important;}
+    .aboutPart1 {
+        background-image:
+            url(pic/bg20.png),       /* волны слева */
+            url(pic/bg03.png),       /* черно-зеленый крест слева */
+            url(pic/bg22.png),       /* малый  крест правее */
+            url(pic/bg05.png);       /* кресты справа */
+        background-size:
+            350px,                       /* волны слева */
+            90px,                         /* черно-зеленый крест слева */
+            70px,                         /* малый  крест правее */
+            80px;                         /* кресты справа */
+        background-position:
+            0px -100px,                /* волны слева */
+            0px 20px,                   /* черно-зеленый крест слева */
+            60px 200px,                /* малый  крест правее */
+            right 5px top 110px;    /* кресты справа */
+        max-width: inherit;
+        padding-bottom: 100px;
+    }
+    #letsButton {
+        border-radius: 12px;
+        width: 150px;
+        height: 40px;
+        margin: 20px auto 0 auto;
+        font-size: 16px;
+    }
+    #letsButton span {margin: 9px auto;}
+    .h2 {font-size: 21px;}
+    #toAbout {top: 170px;}
+    .about1 {margin-top: 97px;}
+    .about2 {
+        margin-top: 0px;
+        font-size: 26px;
+    }
+    .aboutContent {
+        flex-direction: column;
+        margin: 35px auto 25px auto;
+    }
+    .aboutContentColumn1 {
+        width: 95vw;
+        padding: 0 10px;
+    }
+    .aboutContentColumn2 {
+        width: 95vw;
+        margin-left: 10px;
+    }
+    .aboutContentColumn2 .aboutContentHeader {margin-top: 15px;}
+    .aboutContentTxt ul {margin-top: 15px;}
+    .aboutBackground   {background-image: none;}
+    .aboutStat {
+        flex-direction: column;
+        width: 100vw;
+        height: 330px;
+        background-image:
+            url(pic/net.png),    /* сетка в About */
+            url(pic/map.png);   /* карта в About */
+        background-size:
+            850px,                   /* сетка в About */
+            650px;                   /* карта в About */
+        background-position:
+            0 0,                        /* сетка в About */
+            0 0;                        /* карта в About */
+        background-repeat:no-repeat;
+    }
+    .aboutStatColumnHeader {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
 
-#create .leftV  {height:65px !important; top:-47px; left:-18px;}
-#create .leftH  {width:185px !important; top:-19px; left:-36px;}
-#create .rightV {height:65px !important; bottom:-51px; right:-21px;}
-#create .rightH {width:185px !important; bottom:-17px; right:-38px;}
+    #Advantages {
+        background-image:
+        url(pic/bg37.png),     /* кресты слева */
+        url(pic/bg26.png),     /* крестик справа */
+        url(pic/bg08.png),     /* голова в Advntgs */
+        url(pic/bg09.png);     /* сетка для головы */
+        background-size:
+        80px,                        /* кресты слева */
+        40px,                        /* крестик справа */
+        430px,                      /* голова в Advntgs */
+        430px;                      /* сетка для головы */
+        background-position:
+        0 0,                           /* кресты слева */
+        right 20px top 80px,   /* крестик справа */
+        center bottom -10px,  /* голова в Advntgs */
+        center bottom -10px;  /* сетка для головы */
+    }
+    .iPic {
+        min-width: 60px !important;
+        max-width: 60px !important;
+        height: 60px !important;
+        background-size: inherit;
+        margin: 0;
+    }
+    .i01 {
+        background-size: 180%;
+        margin: auto 0 auto 5px !important;
+    }
+    .i02 {
+        background-image: url(pic/i08.png);
+        background-size: 120%;
+    }
+    .i03 {
+        background-image: url(pic/i07.png);
+        background-size: 175%;
+        background-position: -5px;
+    }
+    .i04 {
+        background-image: url(pic/i06.png);
+        background-size: 160%;
+        background-position: 0px;
+    }
+    .i05 {
+        background-image: url(pic/i09.png);
+        background-size: 160%;
+        background-position: 0px;
+    }
+    .advn1 {
+        margin: 110px auto 15px auto;
+        font-size: 26px;
+    }
+    .serv {
+        margin: 0 auto 12px auto;
+        font-size: 26px;
+    }
+    .advnContent {
+        display: block;
+        max-width: 100vw;
+        margin: 0;
+        text-align: left;
+        font-size: 13px;
+        padding-bottom: 450px;
+    }
+    .advnLeftColumn {width: 100vw;}
+    .advnRow {
+        display: block;
+        margin-bottom: 0;
+    }
+    .advnRowColumn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin: 12px auto 0 5px;
+    }
+    .advnText, .advnTopBlockText {
+        padding: 0 10px;
+    }
+    .advnRowImg {
+        width: 65px;
+        height: auto;
+    }
+    .advnTopBlock {
+        border-radius: 0;
+        margin-bottom: 0;
+        border: none;
+        align-items: left;
+        width: 100vw;
+        height: auto;
+        font-size: 14px;
+    }
+    .advnTopBlock img {
+        width: 47px;
+        height: auto;
+        margin-left: 10px;
+    }
+    .advnTopBlock div {width: auto;}
 
+    #toServices {top: -60px;}
+    #Services {
+        background-image:
+        url(pic/bg17.png),     /* зеленый крест после Сервисов */
+        url(pic/bg16.png);     /* серый крест после Сервисов */
+        background-size:
+        50px,                      /* зеленый крест после Сервисов */
+        140px;                      /* серый крест после Сервисов */
+        background-position:
+        right 30px bottom 50px,          /* зеленый крест после Сервисов */
+        right -50px bottom 10px;          /* серый крест после Сервисов */
+    }
+    .servAnonse {
+        font-size: 14px;
+        margin: 0 auto;
+        width: 60vw;
+    }
+    .servContentRow {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .servContentPos,  .servContentPos2 {
+        width: 50vw;
+    }
 
-#projects {
-height: 80% !important;
-background-image: url(pic/crossWm.png), url(pic/crossGrnm.png) !important;
-background-position: 300px 550px, 335px 520px !important;
-}
-#projects header {width:100vw;}
-#projects h2 {font-size:30px !important; margin: auto;}
-.btnViewAll {display: none !important;}
-.btnAllMob {
-display:flex !important;
-width:100px;
-height:50px;
-color:black;
-background-color:#20EB00;
-border-radius:5px;
-font-family: "MontserratBold";
-font-size:110%;
-margin: 20px auto 0 auto;
-}
-.btnAllMob span {
-margin: auto;
-}
-.folder {width:302px !important; margin: 40px auto 0 auto !important;}
-.blk:hover {border: solid 1px #20EB00 !important;}
-.narrows .leftV, .narrows .leftH, .narrows .rightV, .narrows .rightH {display:none !important;}
-.narrows {width:302px !important; margin: 0 auto !important;}
-.next    {left:302px !important;}
+    #toTestimonials {margin-top: 90px; top: -20vh;}
+    .testmn {
+        margin-top: 0;
+        font-size: 26px;
+    }
+    .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next { /* кнопки Влево и Вправо */
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 25%;
+    }
+    .owl-carousel .owl-nav button.owl-prev { /* кнопка Влево */
+        background-image: url('pic/nleftMob.png');
+    }
+    .owl-carousel .owl-nav button.owl-next { /* кнопка Вправо */
+        background-image: url('pic/nrightMob.png');
+    }
+    .folder {
+        padding: 0 40px;
+        width: 75vw !important;
+        height: auto;
+    }
+    .block {
+        border: 1px solid #20EB00 !important;
+        background-color: black !important;
+        width: 70vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .block img {width: 50vw !important;}
+    .blockTxt {font-size: 15px;}
 
+    #toOurTeam {top: -20vh;}
+    #OurTeam {
+        margin-top: 0px;
+        background-image:
+            url(pic/bg34.png),        /* крест слева от Команды */
+            url(pic/bg37.png);        /* двойной крест справа от Команды */
+        background-size:
+            90px,                          /* крест слева от Команды */
+            130px;                        /* двойной крест справа от Команды */
+        background-position:
+            0px 0px,                     /* крест слева от Команды */
+            right -30px top 480px; /* двойной крест справа от Команды */
+    }
+    .ourteam {
+        font-size: 26px;
+        margin-top: 50px;
+    }
+    .folderTeam {
+        padding: 0 40px;
+        width: 75vw !important;
+        height: auto;
+    }
+    .blockTeam {
+        width: 70vw;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .blockTeam img {width: 100% !important;}
 
-#why {
-margin-top:0 !important;
-padding-bottom:0 !important;
-background-image:url(pic/pawm.png), url(pic/crossWmm.png);
-background-position: 20px 440px, 315px 731px;
-}
-#why h2 {
-text-align:left;
-font-size:30px !important;
-margin-left:34px !important;
-margin-bottom:25px !important;
-}
-.whyRow {
-width:90% !important;
-margin: 0 0 23px 30px !important;
-}
-.whyRow .txt {
-font-size:11.75px !important;
-margin-left:20px !important;
-}
-.marginer{height:420px;}
+    #OurTeam .owl-carousel .owl-nav button.owl-prev, /* кнопки Влево и Вправо */
+    #OurTeam .owl-carousel .owl-nav button.owl-next {
+        margin-top: 60px;
+    }
+    .teamName, .teamRole {font-size: 16px !important;}
 
-#cont {
-min-height:calc(100% - 78px) !important;
-height:calc(100% - 78px) !important;
-background-image:url(pic/catm.png) !important;
-background-position:0 bottom !important;
-font-size:14px !important;
-}
-.contContent {margin: 0 auto auto 40px !important;}
-#cont h2 {margin-bottom:30px !important;}
-.soc2 {margin: 20px 0 0 0 !important;}
+    #toContactsMob {top: -100px;}
+    #Contacts {
+        min-height: 0 !important;
+        margin-top: 0px;
+        background-image: none !important;
+    }
+    .empty {display: none;}
+    .contactsContent {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+    .inviteHeader {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .inviteTxt {
+        font-size: 16px;
+    }
+    .AdviceButton {
+        font-size: 16px;
+        width: 160px;
+        height: 46px;
+        margin: 20px auto 50px auto;
+    }
+    .diffLinks {
+        margin-bottom: 0;
+        display: block;
+        font-size: 17px;
+    }
+    .TelMail, .bank, .part {
+        display: block;
+        margin: 0;
+    }
+    .TelMail {margin-bottom: 10px;}
+    .bank {
+        margin-bottom: 0;
+        font-family: "KyivMedium", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    .part {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .contactsTel {margin: 0 auto 10px auto;}
+    .contactsLinks {
+        align-items: flex-end;
+        width: 100%;
+        margin: 0;
+        height: 410px;
+        background-image:
+        url(pic/bg14.png),     /* сетка */
+        url(pic/bg30.png);     /* скульптура */
+        background-size:
+            700px,                  /* сетка */
+            500px;                  /* скульптура */
+        background-position:
+            0 bottom,              /* сетка */
+            -150px  bottom;     /* скульптура */
+        background-repeat: no-repeat;
+    }
+    .contactsLinks > a {margin: 15px 25px 0 0;}
+    .contactsLinks > a:last-child {margin-bottom: 40px;}
+    .contactsLinks img {width: 30px;}
 
-} /* End: Mobiles */
+    /* Talk Form */
+    #talkLayer {
+        background: white;
+        text-align: left;
+    }
+    #talkLayer::before {content:none;}
+    #talkForm {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .formHeader {margin-top: 30px;}
+    #formForm {margin: 15px 10px 0 10px;}
+    #buttonSend {
+        display: block;
+        margin: 200px auto 20px auto;
+    }
+    .formNote {
+        width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /* End: Talk Form */
 
-
-/* Small Mobiles */
-@media all and (max-height:600px) {
-.waveTop  {width:40%;}
-.waveBtm  {width:42%;}
-#cont {
-background-position: right bottom !important;
-background-size: auto 50%;
-}
-
-} /* End: Small Mobiles */
+} /* End: Mobiles    ===================================================== */
