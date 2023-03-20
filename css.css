@@ -1037,7 +1037,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         width: 80vw;
         margin-top: auto;
     }
-    .lnEN {color:#20EB00;}
+    .lnActive {color:#20EB00;}
 
     .waveTop {
         width: 100%;
