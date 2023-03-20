@@ -345,6 +345,7 @@ a  {color:inherit; text-decoration:inherit;}
 
 .advnText {
   padding: 0;
+  flex-grow: 1;
 }
 #Services {
     background-image:
@@ -569,6 +570,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     background-image: linear-gradient(to right, #17CA26, #089368);
     border-radius: 15px;
 }
+.AdviceButtonLong {width: 400px;}
 .AdviceButton span {margin: 13px auto; user-select: none;}
 .AdviceButtonHover {box-shadow: 0px 0px 30px 0px #33FF13;}
 .diffLinks {
@@ -1373,6 +1375,10 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         width: 160px;
         height: 46px;
         margin: 20px auto 50px auto;
+    }
+    .AdviceButtonLong {
+        width: 170px;
+        height: 66px;
     }
     .diffLinks {
         margin-bottom: 0;
