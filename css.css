@@ -238,7 +238,7 @@ a  {color:inherit; text-decoration:inherit;}
     width: 445px;
 }
 .aboutContentColumn2 {
-    width: 230px;
+    width: 240px;
     margin-left: auto;
 }
 .aboutContentHeader {
@@ -555,6 +555,9 @@ width:40px; height:41px; background-image:url('pic/nright.png');
 .inviteHeader {
     margin-bottom: 20px;
 }
+.inviteHeaderLong {
+    margin-bottom: 80px;
+}
 .inviteTxt {
     font-family: "Grotesque", Arial, sans-serif;
     font-size: 20px;
@@ -669,6 +672,13 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     width: 34px;
     height: 34px;
     margin-right: 10px;
+}
+.formHeaderWide {
+    margin-top: 15px;
+    align-items: start;
+}
+.formHeaderWide span {
+    width: 70%;
 }
 #formForm {
     margin: 15px 50px 0 50px;
