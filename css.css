@@ -99,6 +99,7 @@ a  {color:inherit; text-decoration:inherit;}
     border: 1px solid white;
     border-radius: 20px;
     font-size: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .langEN {color:#20EB00; margin:10px 10px 10px 10px;}
 .langs {margin: 5px 10px 10px 10px; display:none;}
