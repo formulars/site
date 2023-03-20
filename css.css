@@ -818,9 +818,9 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         url(pic/bg33.png),        /* малый крест слева от Команды */
         url(pic/bg37.png);        /* двойной крест справа от Команды */
         background-position:
-            28% 0px,                /* большой крест слева от Команды */
-            32% -5px,               /* малый крест слева от Команды */
-            right 20% top 400px;         /* двойной крест справа от Команды */
+            28% 0px,                  /* большой крест слева от Команды */
+            32% -5px,                 /* малый крест слева от Команды */
+            right 20% top 400px; /* двойной крест справа от Команды */
         background-size:
             80px,                      /* большой крест слева от Команды */
             52px,                      /* малый крест слева от Команды */
@@ -839,11 +839,11 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         url(pic/bg14.png),        /* сетка */
         url(pic/bg30.png);        /* скульптура */
     background-position:
-        0 50px,                     /* сетка */
-        0px  bottom;             /* скульптура */
+        0 50px,                        /* сетка */
+        0px  bottom;                /* скульптура */
     background-size:
-        1434px,                    /* сетка */
-        892px;                      /* скульптура */
+        1434px,                       /* сетка */
+        892px;                         /* скульптура */
     }
     .contactsContent {margin-right: 200px;}
 
@@ -860,7 +860,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     #Testimonials,
     #OurTeam,
     #Contacts
-    {max-width:1440px !important;}    /* ФИКСИРОВАННАЯ ШИРИНА ЦЕНТРА */
+    {max-width:1440px !important;}    /* Фиксированная ширина центра */
 
 } /* End: Desktops    ==================================================== */
 
@@ -918,14 +918,14 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     #toAdvantages {top: 30px}
     #Advantages {
         background-image:
-            url(pic/bg08.png),     /* голова в Advntgs */
-            url(pic/bg09.png);     /* сетка для головы */
+            url(pic/bg08.png),                              /* голова в Advntgs */
+            url(pic/bg09.png);                              /* сетка для головы */
         background-size:
-            50%,                     /* голова в Advntgs */
-            50%;                     /* сетка для головы */
+            50%,                                                 /* голова в Advntgs */
+            50%;                                                 /* сетка для головы */
         background-position:
-            right 0 top calc(1vw * -1 + 300px),              /* голова в Advntgs */
-            right 0 top calc(1vw * -1 + 300px);              /* сетка для головы */
+            right 0 top calc(1vw * -1 + 300px),      /* голова в Advntgs */
+            right 0 top calc(1vw * -1 + 300px);      /* сетка для головы */
     }
     .advnContent {
         max-width: 920px;
@@ -1142,7 +1142,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         width: 100vw;
         height: 330px;
         background-image:
-            url(pic/net.png),    /* сетка в About */
+            url(pic/net.png),     /* сетка в About */
             url(pic/map.png);   /* карта в About */
         background-size:
             850px,                   /* сетка в About */
@@ -1258,14 +1258,14 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     #toServices {top: -60px;}
     #Services {
         background-image:
-        url(pic/bg17.png),     /* зеленый крест после Сервисов */
-        url(pic/bg16.png);     /* серый крест после Сервисов */
+        url(pic/bg17.png),                   /* зеленый крест после Сервисов */
+        url(pic/bg16.png);                   /* серый крест после Сервисов */
         background-size:
-        50px,                      /* зеленый крест после Сервисов */
-        140px;                      /* серый крест после Сервисов */
+        50px,                                    /* зеленый крест после Сервисов */
+        140px;                                  /* серый крест после Сервисов */
         background-position:
-        right 30px bottom 50px,          /* зеленый крест после Сервисов */
-        right -50px bottom 10px;          /* серый крест после Сервисов */
+        right 30px bottom 50px,         /* зеленый крест после Сервисов */
+        right -50px bottom 10px;        /* серый крест после Сервисов */
     }
     .servAnonse {
         font-size: 14px;
