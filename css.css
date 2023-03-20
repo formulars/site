@@ -101,7 +101,8 @@ a  {color:inherit; text-decoration:inherit;}
     font-size: 90%;
 }
 .langEN {color:#20EB00; margin:10px 10px 10px 10px;}
-.langNL { margin: 5px 10px 10px 11px; display:none;}
+.langs {margin: 5px 10px 10px 10px; display:none;}
+#langPL {margin: 5px 10px 10px 11px;}
 .dsp {display:block !important;}
 
 #contact3, #contact4, #contact5   {width:20px; height:20px;}

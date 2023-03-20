@@ -52,8 +52,8 @@ $(document).ready(function () {
 
 /* Open-Close lang menu */
 function lngMenu(){
-    document.getElementById("langNL").classList.toggle("dsp");
     document.getElementById("langEN").onclick = "";
+    for( let lang of document.querySelectorAll(".langs") ) { lang.classList.toggle("dsp") };
 };
 
 /* Замена в моб.версии */
