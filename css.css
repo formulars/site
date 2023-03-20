@@ -1029,8 +1029,13 @@ width:40px; height:41px; background-image:url('pic/nright.png');
         border-bottom-color: #20EB00;
         color: #20EB00;
     }
-    .ln     {margin-top: auto;}
-    .lnEN {color:#20EB00; margin-right: 30px;}
+    .ln {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        margin-top: auto;
+    }
+    .lnEN {color:#20EB00;}
 
     .waveTop {
         width: 100%;
