@@ -627,7 +627,7 @@ width:40px; height:41px; background-image:url('pic/nright.png');
 
 /* Talk Form */
 
-#talkLayer {
+#talkLayer, #answer {
     display: none;
     position: fixed;
     top:0;right:0;bottom:0;left:0;
@@ -635,13 +635,13 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     text-align: center;
     z-index: 10;
 }
-#talkLayer::before {
+#talkLayer::before, #answer::before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
-#talkForm {
+#talkForm, #answerForm {
     display: inline-block;
     vertical-align: middle;
     background-color: white;
@@ -650,6 +650,17 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     height: 475px;
     border-radius: 25px;
     box-shadow: 0 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+#answerForm {
+    width: 300px !important;
+    height: 200px !important;
+    font-size: 26px;
+    padding: 15px;
+}
+#answerForm button {
+    width: 100px;
+    height: 30px;
+    margin-top: 50px;
 }
 .formCloser {
     display: flex;

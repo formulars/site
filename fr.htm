@@ -377,8 +377,7 @@
     <div id="talkForm">
       <div class="formCloser" onclick="talkOff()"><img src="pic/x.svg" alt=""></div>
       <div class="formHeader"><img src="pic/say.svg" alt=""><span>Contactez-nous</span></div>
-      <form
-        action="javascript:window.open('mailto:syndicate.mediaproduction@gmail.com?subject=NEWMAIL&body=uname+uemail+uphone');"  enctype="text/plain" id="formForm">
+      <form action="javascript:sendMsg();" enctype="text/plain" id="formForm">
         <input type="text" name="uname" id="uname" placeholder="Votre nom" />
         <input type="email" name="uemail" id="uemail" placeholder="Votre adresse e-mail" />
         <input type="tel" name="uphone" id="uphone" placeholder="Votre numéro de téléphone" />
@@ -387,5 +386,12 @@
       </form>
     </div>
     </div>
-    
+
+    <div id="answer">
+        <div id="answerForm">
+            <div>Votre message a été envoyé. Merci!</div>
+            <button onclick="answerOff()">OK</button>
+        </div>
+    </div>
+
     </body></html>

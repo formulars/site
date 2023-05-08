@@ -377,8 +377,7 @@
 <div id="talkForm">
   <div class="formCloser" onclick="talkOff()"><img src="pic/x.svg" alt=""></div>
   <div class="formHeader"><img src="pic/say.svg" alt=""><span>Contact us</span></div>
-  <form
-    action="javascript:window.open('mailto:syndicate.mediaproduction@gmail.com?subject=NEWMAIL&body=uname+uemail+uphone');"  enctype="text/plain" id="formForm">
+  <form action="javascript:sendMsg();" enctype="text/plain" id="formForm">
     <input type="text" name="uname" id="uname" placeholder="Your name" />
     <input type="email" name="uemail" id="uemail" placeholder="Email" />
     <input type="tel" name="uphone" id="uphone" placeholder="Phone" />
@@ -386,6 +385,13 @@
     <div class="formNote">By clicking the "Send" button, you confirm your consent<br> to the processing of user data.</div>
   </form>
 </div>
+</div>
+
+<div id="answer">
+    <div id="answerForm">
+        <div>Your message has been sent. Thank you!</div>
+        <button onclick="answerOff()">OK</button>
+    </div>
 </div>
 
 </body></html>
