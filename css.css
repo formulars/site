@@ -605,7 +605,9 @@ width:40px; height:41px; background-image:url('pic/nright.png');
     display: none;
     margin-right: 70px;
 }
-.contactsEmail {
+#contact8 {
+    width: 30px !important;
+    height: 30px !important;
 }
 .contactsLinks {
     display: flex;
