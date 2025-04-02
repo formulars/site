@@ -117,6 +117,7 @@ a  {color:inherit; text-decoration:inherit;}
 }
 #video    {
     object-fit: cover;
+    width: 100%;
     max-width: 100%;
     min-height: 100vh;
 }
@@ -724,8 +725,6 @@ width:40px; height:41px; background-image:url('pic/nright.png');
 
 /* Wide desktops    ====================================================== */
 @media all and (min-width:2160px) {
-
-    #video {width: 100%;}
 
     .grid {
         grid-column-gap: 20px;
